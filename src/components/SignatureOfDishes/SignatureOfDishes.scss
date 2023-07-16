@@ -1,0 +1,27 @@
+.signature-main-div {
+  display: flex;
+  width: 100vw;
+  height: 584px;
+  background-color: #fafafa;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 39px 0px;
+    margin-top: 50px;
+  .signature-headline {
+    color: #000;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+  .signature-symboles {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

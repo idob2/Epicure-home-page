@@ -1,0 +1,23 @@
+.chef-card-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .chef-img {
+    width: 360px;
+    height: 338px;
+    flex-shrink: 0;
+  }
+  .chef-description {
+    width: 360px;
+    color: #000;
+    text-align: justify;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 28px;
+    letter-spacing: 1.25px;
+  }
+}
+

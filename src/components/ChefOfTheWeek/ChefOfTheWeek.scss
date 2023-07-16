@@ -1,0 +1,20 @@
+.chef-of-the-week-div{
+// padding: 0px 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+.chef-of-the-week-title-div{
+width: 360px;
+}
+.chef-of-the-week-headline {
+    color: #000;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+}

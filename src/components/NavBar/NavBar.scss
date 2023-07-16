@@ -1,0 +1,50 @@
+%shared-button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+%shared-sizes {
+  width: 20px;
+  height: 20px;
+}
+.main-navigation {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  flex-shrink: 0;
+  padding: 0 20px;
+  background-color: white;
+  width: 100vw;
+  button {
+    @extend %shared-button;
+  }
+  .order-bag-div {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+  }
+  .about-logo-div{
+    .about-logo {
+      
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .hambur-logo-div {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    .hamburg-button {
+      .hamburg-img {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+      }
+      
+    }
+  }
+}

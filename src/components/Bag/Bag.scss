@@ -1,0 +1,39 @@
+.shopping-bag-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 218px;
+    gap: 83px;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 2;
+    .bag-container{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+        .bag-image{
+            width: 57px;
+            height: 57px;
+        }
+        p{
+            color: #000;
+            text-align: center;
+            font-family: Helvetica Neue;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 20px;
+            letter-spacing: 1.97px;
+            text-transform: uppercase;
+            word-wrap: break-word;
+        }
+    }
+    
+}
