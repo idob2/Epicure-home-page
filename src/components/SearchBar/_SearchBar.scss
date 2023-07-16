@@ -19,7 +19,7 @@
       padding-left: 3%;
     }
     .search-input {
-      flex: 1 0 0;
+      flex: 1;
       color: #000;
       font-family: Helvetica Neue;
       font-size: 14px;
@@ -29,6 +29,6 @@
       letter-spacing: 1.29px;
       border-color: transparent;
       background-color: transparent;
-      flex-shrink: 0;
+      flex-shrink: 1;
     }
   }

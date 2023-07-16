@@ -8,10 +8,11 @@
   height: 20px;
 }
 .main-navigation {
+  max-width: 700px;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 46px;
-  flex-shrink: 0;
   padding: 0 20px;
   background-color: white;
   width: 100vw;
@@ -28,6 +29,9 @@
     }
   }
   .about-logo-div{
+    display: flex;
+    align-items: center;
+   
     .about-logo {
       
       width: 32px;
@@ -35,7 +39,6 @@
     }
   }
   .hambur-logo-div {
-    display: flex;
     flex: 1;
     justify-content: space-between;
     .hamburg-button {
@@ -46,5 +49,33 @@
       }
       
     }
+  }
+}
+@media screen and (max-width: 700px) {
+  .restaurants-nav-bar{
+    display: none;
+  }
+  .chefs-nav-bar{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .restaurants-nav-bar{
+    display:flex;
+  }
+  .chefs-nav-bar{
+    display: flex;
+  }
+  .about-logo-div{
+    flex-grow: 1;
+    justify-content: start;
+  }
+  .hambur-logo-div {
+    display: none;
+  .hamburg-img {
+    display: none;
+
+  }
   }
 }
