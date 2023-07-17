@@ -21,12 +21,14 @@ const AboutUs = () => {
               imgClassName="google-play-image"
               src={GooglePlayButton}
               alt="google play"
+              onClick={() => {console.log("button clicked")}}
             ></Button>
             <Button
               buttonClassName="apple-store-button"
               imgClassName="apple-store-image"
               src={AppleStoreButton}
               alt="apple store"
+              onClick={() => {console.log("button clicked")}}
             ></Button>
           </div>
           <div className="about-us-descreption-div">

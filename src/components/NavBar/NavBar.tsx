@@ -2,40 +2,63 @@ import React from "react";
 import { useState } from "react";
 import "./NavBar.scss";
 import HamburgIcon from "../../assets/nav_bar_images/HAMBUR.svg";
-import AboutLogo from "../../assets/nav_bar_images/about-logo@3x 1.svg"
+import AboutLogo from "../../assets/nav_bar_images/about-logo@3x 1.svg";
 import SearchIcon from "../../assets/nav_bar_images/Group.svg";
 import BagIcon from "../../assets/nav_bar_images/Property 1=Bag.svg";
 import GeneralIcon from "../../assets/nav_bar_images/General.svg";
+import Button from "../Button/Button";
 
 const NavBar = (props: any) => {
   return (
     <nav className="main-navigation">
-        <div className="hambur-logo-div">
-        <button className="hamburg-button" onClick={props.handleMenuClick}>
-            <img className="hamburg-img" src={HamburgIcon} alt="Hamburg" />
-        </button>
-        </div>
-        <div className="about-logo-div">
-        <img  className="about-logo" src={AboutLogo} alt="AboutLogo"/>
+      <div className="hambur-logo-div">
+        <Button
+          buttonClassName="transparant-background-button"
+          imgClassName="hamburg-img"
+          src={HamburgIcon}
+          alt="Menu"
+          onClick={props.handleMenuClick}
+        ></Button>
+      </div>
+      <div className="about-logo-div">
+        <img className="about-logo" src={AboutLogo} alt="AboutLogo" />
         <span className="epicure">EPICURE</span>
-        <a className="restaurants-nav-bar" href="">Restaurants</a>
-        <a className="chefs-nav-bar" href="">Chefs</a>
-        </div>
-        
-        <div className="order-bag-div">
-        <button className="search-button" onClick={props.handleSearchClick}>
-            <img className="search-img" src={SearchIcon} alt="Hamburg" />
-        </button>
-        <button className="person-button">
-            <img className="person-img" src={GeneralIcon} alt="Hamburg" />
-        </button>
-        <button className="bag-button" onClick={props.handleBagClick}>
-            <img className="bag-img" src={BagIcon} alt="Hamburg" />
-        </button>
-        </div>
-    </nav>
-    
+        <a className="link-nav-bar" href="">
+          Restaurants
+        </a>
+        <a className="link-nav-bar" href="">
+          Chefs
+        </a>
+      </div>
 
+      <div className="order-bag-div">
+        <Button
+          buttonClassName="transparant-background-button"
+          imgClassName="icon"
+          src={SearchIcon}
+          alt="Search"
+          onClick={props.handleMenuClick}
+        ></Button>
+
+        <Button
+          buttonClassName="transparant-background-button"
+          imgClassName="icon"
+          src={GeneralIcon}
+          alt="Personal info"
+          onClick={() => {
+            console.log("button clicked");
+          }}
+        ></Button>
+
+        <Button
+          buttonClassName="transparant-background-button"
+          imgClassName="icon"
+          src={BagIcon}
+          alt="Order list"
+          onClick={props.handleBagClick}
+        ></Button>
+      </div>
+    </nav>
   );
 };
 

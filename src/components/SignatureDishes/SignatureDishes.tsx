@@ -8,21 +8,20 @@ const SignatureDishes = () => {
   return (
     <div className="signature-dishes-div">
       <div className="signature-dish-title-div">
-        <h2 className="signature-dish-title">Signature Dishes of:</h2>
+        <h2 >Signature Dishes of:</h2>
       </div>
       <div>
         <SignatureDishesSwiper dishes={Dishes} />
       </div>
       <div className="all-signature-dishes-div">
         <a className="bold-link line-hight35" href="">All Restaurants</a>
-        <button className="all-dishes-button">
         <Button
             buttonClassName="transparant-background-button"
             imgClassName="icon"
             src={AllResturantsIcon}
             alt="AllResturantsIcon"
+            onClick={() => {console.log("button clicked")}}
           ></Button>
-        </button>
       </div>
     </div>
   );

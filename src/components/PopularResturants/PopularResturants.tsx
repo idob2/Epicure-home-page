@@ -12,7 +12,7 @@ const PopularResturants = () => {
       </GenericContainer>
       <div className="popular-resturants-div">
         <div className="title-div">
-          <h2 className="popular-title">popular restaurant in epicure:</h2>
+          <h2 className="spacing-1-25">popular restaurant in epicure:</h2>
         </div>
         <div>
           <PopularSwiper resturants={PopularResturantsList} />
@@ -26,6 +26,7 @@ const PopularResturants = () => {
             imgClassName="icon"
             src={AllResturantsIcon}
             alt="AllResturantsIcon"
+            onClick={() => {console.log("button clicked")}}
           ></Button>
         </div>
       </div>

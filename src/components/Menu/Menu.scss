@@ -6,7 +6,6 @@
 }
 .menu-bar {
   background-color: white;
-  box-shadow: 2px 4px 10px 0px rgba(175, 175, 175, 0.25);
   z-index: 2;
   width:100vw;
   height: 367px;
@@ -28,16 +27,6 @@
     padding: 40px 12px 24px 20px;
     @extend %shared-divs;
     flex-shrink: 0;
-    a {
-      font-family: Helvetica Neue;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 200;
-      line-height: normal;
-      letter-spacing: 1.92px;
-      text-decoration: none;
-      color: #000;
-    }
 
     .lower-div {
       @extend %shared-divs;

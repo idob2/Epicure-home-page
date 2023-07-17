@@ -27,7 +27,7 @@ const SignatureDishes = () => {
   }, []);
   return (
     <div className="signature-main-div">
-      <h2 className="signature-headline">{signatureHeadLine}</h2>
+      <h2 >{signatureHeadLine}</h2>
       <div className="signature-symboles">
         {Symbols.map((dishSymbol: {icon:string, name:string}) => (
           <DishSymbol

@@ -1,37 +1,10 @@
-.signature-dish-title-div {
-  .signature-dish-title {
-    color: #000;
-    font-family: Helvetica Neue;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 24px;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-  }
-}
 .signature-dishes-div{
   padding:10px 25px;
   max-width: 900px;
   margin: 0 auto;
-
-
 }
 .all-signature-dishes-div{
     display: flex;
-    // margin-left: 20px;
-    // margin-top: 10px;
-  
-  .all-dishes-button {
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-    padding-bottom: 0px;
-    .resturants-icon {
-        width: 20px;
-        height: 20px;
-    }
-  }
 }
 
 

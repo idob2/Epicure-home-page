@@ -1,7 +1,7 @@
 .chef-card-div {
   display: flex;
  
-  width: 360px;
+  // width: 360px;
 
   .chef-img {
     width: 400px;
@@ -11,8 +11,7 @@
 
 @media screen and (min-width: 900px) {
   .chef-card-div {
-    // flex-direction: row;
-    flex-direction: column;//should be row 
+    flex-direction: row;//should be row 
     justify-content: center;
     align-items: center;
     gap:20px;

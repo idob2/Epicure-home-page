@@ -1,11 +1,18 @@
 import "./Menu.scss";
 import ExitFromMenu from "../../assets/general_images/General.svg";
+import Button from "../Button/Button";
 const Menu = (props: any) => {
     return (
-      <nav className="menu-bar">
-        <button className="exit-button" onClick={props.handleMenuClick}>
-            <img className="exit-img" src={ExitFromMenu} alt="Exit" />
-        </button>
+      <nav className="menu-bar box-shadow">
+
+      <Button
+          buttonClassName="transparant-background-button"
+          imgClassName="icon"
+          src={ExitFromMenu}
+          alt="Exit"
+
+          onClick={props.handleMenuClick}
+        ></Button>
         <div className="menu-items">
         <a href="">Resturants</a>
           <a href="">Chefs</a>

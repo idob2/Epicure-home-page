@@ -1,7 +1,7 @@
-const Link = (props: {text:string, className: string, link: string}) => {
+const Link = (props: {text:string, link: string}) => {
     return (
         <div>
-            <a className={props.className} href={props.link}>{props.text}</a>
+            <a href={props.link}>{props.text}</a>
         </div>
     );
 };

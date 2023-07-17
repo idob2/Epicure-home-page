@@ -1,9 +1,3 @@
-%shared-button {
-  background-color: transparent;
-  border-color: transparent;
-  cursor: pointer;
-}
-
 
 %shared-sizes {
   width: 20px;
@@ -19,9 +13,7 @@
   padding: 0 20px;
   background-color: white;
   width: 100vw;
-  button {
-    @extend %shared-button;
-  }
+  
   .order-bag-div {
     display: flex;
     justify-content: end;
@@ -44,21 +36,10 @@
   .hambur-logo-div {
     flex: 1;
     justify-content: space-between;
-    .hamburg-button {
-      .hamburg-img {
-        width: 24px;
-        height: 24px;
-        flex-shrink: 0;
-      }
-      
-    }
   }
 }
 @media screen and (max-width: 900px) {
-  .restaurants-nav-bar{
-    display: none;
-  }
-  .chefs-nav-bar{
+  .link-nav-bar{
     display: none;
   }
   .epicure{
@@ -68,17 +49,6 @@
 
 
 @media screen and (min-width: 900px) {
-  %shared-link{
-    color: #000;
-    font-family: Helvetica Neue;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    letter-spacing: 1.92px;
-    text-decoration: none;
-  
-  }
   .epicure{
     color: #000;
     font-family: Helvetica Neue;
@@ -88,14 +58,10 @@
     line-height: normal;
     letter-spacing: 1.35px;
   }
-  .restaurants-nav-bar{
-    @extend %shared-link;
+  .link-nav-bar{
     display:flex;
   }
-  .chefs-nav-bar{
-    @extend %shared-link;  
-    display: flex;
-  }
+
   .about-logo-div{
     flex-grow: 1;
     justify-content: start;

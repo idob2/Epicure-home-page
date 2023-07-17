@@ -1,39 +1,11 @@
-.title-div {
-
-  .popular-title {
-    color: #000;
-    font-family: Helvetica Neue;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 24px;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-  }
-}
 .popular-resturants-div{
   padding: 10px 25px;
   max-width: 900px;
   margin: 0 auto; 
-
 }
 .all-resturants-div {
     display: flex;
-    // margin-left: 20px;
-    // margin-top: 10px;
- 
-  .resturants-button {
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-    .resturants-icon {
-        width: 20px;
-        height: 20px;
-    }
-  }
 }
-
-
 @media screen and (min-width: 900px) {
   .all-resturants-div{
     justify-content: end;
