@@ -3,13 +3,15 @@
   border-color: transparent;
   cursor: pointer;
 }
+
+
 %shared-sizes {
   width: 20px;
   height: 20px;
 }
 .main-navigation {
   margin: 0 auto; 
-  max-width: 700px;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,25 +54,53 @@
     }
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .restaurants-nav-bar{
     display: none;
   }
   .chefs-nav-bar{
+    display: none;
+  }
+  .epicure{
     display: none;
   }
 }
 
-@media screen and (min-width: 700px) {
+
+@media screen and (min-width: 900px) {
+  %shared-link{
+    color: #000;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    text-decoration: none;
+  
+  }
+  .epicure{
+    color: #000;
+    font-family: Helvetica Neue;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 1.35px;
+  }
   .restaurants-nav-bar{
+    @extend %shared-link;
     display:flex;
   }
   .chefs-nav-bar{
+    @extend %shared-link;  
     display: flex;
   }
   .about-logo-div{
     flex-grow: 1;
     justify-content: start;
+    display: flex;
+    gap:10px;
   }
   .hambur-logo-div {
     display: none;

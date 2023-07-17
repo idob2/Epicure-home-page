@@ -7,8 +7,8 @@ const ResturantCard = (props: {imgUrl: string, name: string, chef:string}) => {
             <img className="resturant-image" src={props.imgUrl} alt={props.name} />
             </div>
             <div className="popular-name-div">
-                <p className="resturant-name">{props.name}</p>
-                <p className="popular-chef-name">{props.chef} </p>
+                <span className="resturant-name">{props.name}</span>
+                <span className="popular-chef-name">{props.chef} </span>
             </div>
             
         </div>

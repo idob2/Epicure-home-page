@@ -30,10 +30,9 @@ const AboutUs = () => {
             ></Button>
           </div>
           <div className="about-us-descreption-div">
-            <h3 className="about-us-headline"> About us:</h3>
-            <p >
-                <Description className="about-us-description"></Description>
-            </p>
+            <h2 className="header"> About us:</h2>
+            
+                <Description className="spacing-2-14"></Description>
           </div>
         </div>
       </div>

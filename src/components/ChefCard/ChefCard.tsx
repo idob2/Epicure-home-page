@@ -9,7 +9,9 @@ const ChefCard = (props: {
         src={props.chef.chefImag}
         alt={props.chef.chefDescription}
       />
-      <p className="chef-description">{props.chef.chefDescription}</p>
+      <div className="chef-description-div">
+        <p className="spacing-1-25">{props.chef.chefDescription}</p>
+      </div>
     </div>
   );
 };

@@ -17,6 +17,7 @@ const NavBar = (props: any) => {
         </div>
         <div className="about-logo-div">
         <img  className="about-logo" src={AboutLogo} alt="AboutLogo"/>
+        <span className="epicure">EPICURE</span>
         <a className="restaurants-nav-bar" href="">Restaurants</a>
         <a className="chefs-nav-bar" href="">Chefs</a>
         </div>

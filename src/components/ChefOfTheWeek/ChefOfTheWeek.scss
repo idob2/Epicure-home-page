@@ -1,5 +1,5 @@
 .chef-of-the-week-div {
-  max-width: 700px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,26 +10,17 @@
   .chef-of-the-week-title-div {
     width: 360px;
   }
-  .chef-of-the-week-headline {
-    color: #000;
-    font-family: Helvetica Neue;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 35px;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-  }
 }
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .chef-of-the-week-title-div {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  
+
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 }

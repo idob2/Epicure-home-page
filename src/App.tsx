@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import '../src/assets/styles/styles.scss';
 import EpicurePage from './components/EpicurePage/EpicurePage';
 function App() {
 

@@ -10,7 +10,7 @@ const PopularSwiper = (props: { resturants: { imgUrl: string; name: string; chef
   const [slidesPerView, setSlidesPerView] = useState<number>(1.5);
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 500) {
+      if (window.innerWidth > 900) {
         setSlidesPerView(3);
       } else {
         setSlidesPerView(1.5);

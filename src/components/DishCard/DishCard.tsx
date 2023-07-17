@@ -16,16 +16,21 @@ const DishCard = (props: {
         />
       </div>
       <div className="signature-dish-content-div">
-        <p className="signature-dish-name">{props.name}</p>
-        <p className="signature-dish-description">{props.description} </p>
-        <p className="signature-dish-type">{props.type} </p>
+        <span className="signature-dish-name">{props.name}</span>
+        <div className="dish-card-content-div">
+        <span className="signature-dish-description">{props.description} </span>
+        <span className="signature-dish-type">{props.type} </span>
         <div className="hr-cost-div">
-          <p className="signature-dish-cost">{props.cost} </p>
-          <div className="hr-div">
+          <hr />
+          <span className="signature-dish-cost">{props.cost} </span>
+          <hr />
+          {/* <div className="hr-div">
             <hr className="cost-hr" />
-          </div>
+          </div> */}
           
         </div>
+        </div>
+        
       </div>
     </div>
   );

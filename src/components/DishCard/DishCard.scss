@@ -16,9 +16,7 @@
       object-fit: cover;
     }
   }
-  .signature-dishs-div{
-    
-  }
+ 
   .signature-dish-content-div {
     display: flex;
     padding: 8px 16px 16px 16px;
@@ -38,7 +36,11 @@
       letter-spacing: 2.67px;
       margin-bottom: 0px;
     }
-
+    .dish-card-content-div{
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
     .signature-dish-description {
       align-self: stretch;
       color: #000;
@@ -49,21 +51,40 @@
       line-height: 20px; /* 125% */
       letter-spacing: 1.97px;
     }
-
+   
     .hr-cost-div{
         display: flex;
         flex-direction: row;
         width: 100%;
         align-items: center;
+        gap: 6px;
+      
         .hr-div{
           width: 100%;
-          padding: 8px;
+          
           .cost-hr{
             height: 0.5px;
-            background: #979797;
         }
-        }
-        
+        } 
     }
+  }
+}
+@media screen and (max-width: 900px) {
+hr{
+  display: none;
+}
+}
+
+
+@media screen and (min-width: 900px) {
+  .signature-dish-name{
+    align-self: center;
+  }
+  hr{
+    width: 100%;
+    // padding: 8px;
+    color: #979797;
+    height: 0.5px;
+
   }
 }

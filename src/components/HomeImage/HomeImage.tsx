@@ -6,7 +6,7 @@ const HomeImage = (props: any) => {
       <div className="image-div">
         <div className="search-div">
           <div className="inner-search-div">
-            <p className="image-div-title">Epicure works with the top chef restaurants in Tel Aviv</p>
+            <h2 className="image-div-title">Epicure works with the top chef restaurants in Tel Aviv</h2>
             <SearchBar></SearchBar>
           </div>
         </div>

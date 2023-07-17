@@ -1,6 +1,4 @@
 .signature-dish-title-div {
-// margin-top: 50px;
-//   margin-left: 20px;
   .signature-dish-title {
     color: #000;
     font-family: Helvetica Neue;
@@ -14,7 +12,7 @@
 }
 .signature-dishes-div{
   padding:10px 25px;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 
 
@@ -23,18 +21,7 @@
     display: flex;
     // margin-left: 20px;
     // margin-top: 10px;
-  a{
-    color: #000;
-    text-align: right;
-    font-family: Helvetica Neue;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    text-decoration: none;
-  }
+  
   .all-dishes-button {
     background-color: transparent;
     border-color: transparent;
@@ -44,5 +31,16 @@
         width: 20px;
         height: 20px;
     }
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .all-signature-dishes-div{
+    justify-content: end;
+  }
+  .signature-dish-title-div {
+    display: flex;
+    justify-content: center;
   }
 }

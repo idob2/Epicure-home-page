@@ -5,7 +5,7 @@ const ChefOfTheWeek = () => {
   return (
     <div className="chef-of-the-week-div">
       <div className="chef-of-the-week-title-div">
-        <p className="chef-of-the-week-headline"> Chef of the week: </p>
+        <h2 className="chef-of-the-week-headline"> Chef of the week: </h2>
       </div>
       <ChefCard chef={Chefs.Yossi}></ChefCard>
     </div>

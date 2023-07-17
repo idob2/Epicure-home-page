@@ -1,27 +1,56 @@
 .signature-main-div {
   display: flex;
   width: 100vw;
-  height: 584px;
   background-color: #fafafa;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 39px 0px;
-    margin-top: 50px;
-  .signature-headline {
+  // margin-top: 50px;
+  .signature-headline{
     color: #000;
     font-family: Helvetica Neue;
-    font-size: 18px;
     font-style: normal;
     font-weight: 200;
-    line-height: 35px;
-    letter-spacing: 1.25px;
+    line-height: 35px; 
     text-transform: uppercase;
+
   }
   .signature-symboles {
-    display: inline-flex;
+    display: flex;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .signature-headline {
+   
+    font-size: 18px;
+    letter-spacing: 1.25px;
+  }
+  .signature-symboles {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 584px;
+
   }
+
+}
+
+@media screen and (min-width: 900px) {
+  .signature-headline {
+    text-align: center;    
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+  .signature-symboles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+
 }

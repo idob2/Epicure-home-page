@@ -13,7 +13,7 @@
       display: flex;
     }
     padding: 20px 20px;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     .store-description-div {
@@ -42,34 +42,11 @@
         flex-direction: column;
         align-items: baseline;
         justify-content: baseline;
-        .about-us-headline {
-          color: #000;
-          font-family: Helvetica Neue;
-          font-style: normal;
-          font-weight: 200;
-          line-height: 35px;
-          text-transform: uppercase;
-          color: #000;
-          font-family: Helvetica Neue;
-          font-style: normal;
-          font-weight: 200;
-          line-height: 35px;
-          text-transform: uppercase;
-        }
-        .about-us-description {
-          color: #000;
-          font-family: Helvetica Neue;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 200;
-          line-height: 28px; /* 155.556% */
-          letter-spacing: 2.14px;
-        }
       }
     }
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .stores-div {
     flex-direction: column;
     align-items: flex-start;
@@ -79,16 +56,12 @@
     gap: 20px;
     .store-description-div {
       flex-direction: column;
-      .about-us-headline {
-        font-size: 18px;
-        letter-spacing: 1.25px;
-      }
     }
   }
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .stores-div {
     flex-direction: row-reverse;
   }
@@ -101,14 +74,7 @@
     flex-direction: column-reverse;
     align-items: flex-start;
     flex: 1;
-    .about-us-headline {
-      font-size: 30px;
-      letter-spacing: 2.14px;
-    }
-    .about-us-description {
-      //   width: 569px;
-      //   height: 250px;
-    }
+  
   }
   .epicure-icon-div {
     justify-content: end;

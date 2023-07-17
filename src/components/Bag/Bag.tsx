@@ -8,7 +8,7 @@ const Bag = () => {
     <div className="shopping-bag-div">
         <div className="bag-container">
             <img className = "bag-image" src={BagIcon} alt="Bag Icon" />
-            {bagItems.length === 0  && <p>your bag is <br /> empty</p>}
+            {bagItems.length === 0  && <span>your bag is <br /> empty</span>}
         </div>
       
     </div>
