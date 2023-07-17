@@ -1,0 +1,117 @@
+%shared-background {
+  background-color: transparent;
+  border: none;
+}
+
+.about-us-outer-div {
+  width: 100%;
+  //   height: 529px;
+  background: #fafafa;
+  .about-us-inner-div {
+    display: flex;
+    .epicure-icon-div {
+      display: flex;
+    }
+    padding: 20px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    .store-description-div {
+      display: flex;
+      .stores-div {
+        display: flex;
+        gap: 16px;
+
+        .google-play-button {
+          padding: 0;
+          @extend %shared-background;
+          .google-play-image {
+            @extend %shared-background;
+          }
+        }
+        .apple-store-button {
+          padding: 0;
+          @extend %shared-background;
+          .apple-store-image {
+            @extend %shared-background;
+          }
+        }
+      }
+      .about-us-descreption-div {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+        .about-us-headline {
+          color: #000;
+          font-family: Helvetica Neue;
+          font-style: normal;
+          font-weight: 200;
+          line-height: 35px;
+          text-transform: uppercase;
+          color: #000;
+          font-family: Helvetica Neue;
+          font-style: normal;
+          font-weight: 200;
+          line-height: 35px;
+          text-transform: uppercase;
+        }
+        .about-us-description {
+          color: #000;
+          font-family: Helvetica Neue;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 200;
+          line-height: 28px; /* 155.556% */
+          letter-spacing: 2.14px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .stores-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-us-inner-div {
+    flex-direction: column;
+    gap: 20px;
+    .store-description-div {
+      flex-direction: column;
+      .about-us-headline {
+        font-size: 18px;
+        letter-spacing: 1.25px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .stores-div {
+    flex-direction: row-reverse;
+  }
+  .about-us-inner-div {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .store-description-div {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    flex: 1;
+    .about-us-headline {
+      font-size: 30px;
+      letter-spacing: 2.14px;
+    }
+    .about-us-description {
+      //   width: 569px;
+      //   height: 250px;
+    }
+  }
+  .epicure-icon-div {
+    justify-content: end;
+    flex: 1;
+  }
+}

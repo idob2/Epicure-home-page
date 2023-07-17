@@ -1,6 +1,6 @@
 .signature-dish-title-div {
-margin-top: 50px;
-  margin-left: 20px;
+// margin-top: 50px;
+//   margin-left: 20px;
   .signature-dish-title {
     color: #000;
     font-family: Helvetica Neue;
@@ -12,10 +12,17 @@ margin-top: 50px;
     text-transform: uppercase;
   }
 }
+.signature-dishes-div{
+  padding:10px 25px;
+  max-width: 700px;
+  margin: 0 auto;
+
+
+}
 .all-signature-dishes-div{
     display: flex;
-    margin-left: 20px;
-    margin-top: 10px;
+    // margin-left: 20px;
+    // margin-top: 10px;
   a{
     color: #000;
     text-align: right;

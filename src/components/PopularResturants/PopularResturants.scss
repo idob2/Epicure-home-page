@@ -1,6 +1,6 @@
 .title-div {
-    margin-top: 50px;
-  margin-left: 20px;
+    // margin-top: 50px;
+  // margin-left: 20px;
   .popular-title {
     color: #000;
     font-family: Helvetica Neue;
@@ -12,10 +12,16 @@
     text-transform: uppercase;
   }
 }
+.popular-resturants-div{
+  padding: 10px 25px;
+  max-width: 700px;
+  margin: 0 auto; 
+
+}
 .all-resturants-div {
     display: flex;
-    margin-left: 20px;
-    margin-top: 10px;
+    // margin-left: 20px;
+    // margin-top: 10px;
   a {
     color: #000;
     text-align: right;

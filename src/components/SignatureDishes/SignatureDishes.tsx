@@ -13,7 +13,7 @@ const SignatureDishes = () => {
         <SignatureDishesSwiper dishes={Dishes} />
       </div>
       <div className="all-signature-dishes-div">
-        <a href="">All Dishes</a>
+        <a href="">All Restaurants</a>
         <button className="all-dishes-button">
           <img
             className="resturants-icon"
