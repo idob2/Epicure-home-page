@@ -1,0 +1,92 @@
+h2 {
+    @media screen and(max-width: 900px) {
+      color: #000;
+  font-family: Helvetica Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 35px; /* 194.444% */
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+    }
+    @media screen and(min-width: 900px) {
+      color: #000;
+      text-align: center;
+      font-family: Helvetica Neue;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: 35px; /* 116.667% */
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+    }
+  }
+  p {
+    color: #000;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 28px; /* 155.556% */
+  }
+  .justify-text {
+    text-align: justify;
+  }
+  .spacing-2-14 {
+    letter-spacing: 2.14px;
+  }
+  
+  .spacing-1-25 {
+    letter-spacing: 1.25px;
+  }
+
+  .card-name {
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.67px;
+  }
+  
+  .card-input {
+    align-self: stretch;
+    color: #000;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.97px;
+  }
+  .align-text-center {
+    text-align: center;
+  }
+
+
+  .symbole-name {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: 1.97px;
+  }
+
+  .image-div-title {
+    color: #000;
+    font-family: Helvetica Neue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 32px;
+    letter-spacing: 1.97px;
+    margin-bottom: 0px;
+    flex-shrink: 0;
+
+  }
