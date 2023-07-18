@@ -34,6 +34,7 @@ const ChefOfTheWeekRestaurants = (props: {name:string}) => {
     imgUrl: restaurant.imgUrl,
     name: restaurant.name,
     chef: "",
+    rating: ""
   }));
 
 

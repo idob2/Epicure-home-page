@@ -20,11 +20,15 @@
     padding: 8px 16px 40px 16px;
     flex-direction: column;
     align-self: stretch;
+    gap: 12px;
     background: #f9f4ea;
   }
 }
 
 @include mobile-only {
+  .star-rating{
+    display: none;
+  }
   .popular-name-div {
     align-items: flex-start;
   }

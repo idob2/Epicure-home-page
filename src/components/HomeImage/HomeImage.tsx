@@ -6,7 +6,7 @@ const HomeImage = (props: any) => {
     <div className="image-div">
       <div className="search-div">
         <div className="inner-search-div">
-          <h2 className="image-div-title">
+          <h2 className="image-div-title align-text-center">
             Epicure works with the top chef restaurants in Tel Aviv
           </h2>
           <SearchBar></SearchBar>

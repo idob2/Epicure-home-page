@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import "swiper/css";
 import ResturantCard from "../ResturantCard/ResturantCard";
 
-const PopularSwiper = (props: { resturants: { imgUrl: string; name: string; chef?: string }[]}) => {
+const PopularSwiper = (props: { resturants: { imgUrl: string; name: string; chef?: string, rating?: string }[]}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(1.5);
   useEffect(() => {
     const handleResize = () => {
@@ -42,6 +42,7 @@ const PopularSwiper = (props: { resturants: { imgUrl: string; name: string; chef
             imgUrl={resturant.imgUrl}
             name={resturant.name}
             chef={resturant.chef ? resturant.chef : ""}
+            rating={resturant.rating ? resturant.rating : ""}
           ></ResturantCard>
         </SwiperSlide>
       ))}
