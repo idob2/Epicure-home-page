@@ -8,15 +8,15 @@ import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 
 const SignatureDishes = () => {
   return (
-    <GenericHomeSection color="white">
+    <GenericHomeSection className="margin-div" color="white">
       <GenericContainer>
         <div className="signature-dish-title-div">
           <h2>Signature Dishes of:</h2>
         </div>
-        <div>
+        <div className="small-margin-div">
           <SignatureDishesSwiper dishes={Dishes} />
         </div>
-        <div className="all-signature-dishes-div">
+        <div className="all-signature-dishes-div small-margin-div">
           <a className="bold-link line-hight35" href="">
             All Restaurants
           </a>

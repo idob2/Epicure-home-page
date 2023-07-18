@@ -7,15 +7,15 @@ import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 import Button from "../Button/Button";
 const PopularRestaurants = () => {
   return (
-    <GenericHomeSection color="white">
+    <GenericHomeSection className="margin-div" color="white">
       <GenericContainer>
         <div className="title-div">
           <h2 className="spacing-1-25">popular restaurant in epicure:</h2>
         </div>
-        <div>
+        <div className="small-margin-div">
           <PopularSwiper resturants={PopularResturantsList} />
         </div>
-        <div className="all-resturants-div">
+        <div className="all-resturants-div small-margin-div">
           <a className="bold-link line-hight25" href="">
             All restaurants
           </a>

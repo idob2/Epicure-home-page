@@ -1,14 +1,13 @@
+@import './mixin.scss';
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@include desktop-only {
+  .small-margin-div {
+    margin-top: 40px;
   }
-  
-  
-  
-  
-  
-  
-    .box-shadow{
-  
-      box-shadow: 2px 4px 10px 0px rgba(175, 175, 175, 0.25);
-  
-    }
+}
+.box-shadow {
+  box-shadow: 2px 4px 10px 0px rgba(175, 175, 175, 0.25);
+}

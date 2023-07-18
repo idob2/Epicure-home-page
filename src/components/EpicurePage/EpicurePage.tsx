@@ -21,7 +21,7 @@ const EpicurePage = () => {
       <SignatureOfDishes></SignatureOfDishes>
       <ChefOfTheWeek></ChefOfTheWeek>
       
-      <ChefOfTheWeekRestaurants></ChefOfTheWeekRestaurants>
+      {/* <ChefOfTheWeekRestaurants></ChefOfTheWeekRestaurants> */}
       <AboutUs></AboutUs>
       
     </div>

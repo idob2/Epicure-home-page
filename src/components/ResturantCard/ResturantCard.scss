@@ -17,7 +17,7 @@
   }
   .popular-name-div {
     display: flex;
-    padding: 8px 16px 16px 16px;
+    padding: 8px 16px 40px 16px;
     flex-direction: column;
     align-self: stretch;
     background: #f9f4ea;
@@ -32,6 +32,7 @@
 
 @include desktop-only {
   .popular-name-div {
+    text-align: center;
     align-items: center;
     justify-content: center;
   }

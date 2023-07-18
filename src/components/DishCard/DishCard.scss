@@ -21,7 +21,6 @@
     display: flex;
     padding: 8px 16px 16px 16px;
     flex-direction: column;
-    align-items: flex-start;
     align-self: stretch;
     background: #f9f4ea;
 
@@ -50,9 +49,18 @@
   hr {
     display: none;
   }
+  .signature-dish-content-div {
+    align-items: flex-start;
+  }
 }
 
 @include desktop-only {
+  .signature-dish-content-div {
+    align-items: center;
+  }
+  .card-input {
+    text-align: center;
+  }
   .signature-dish-name {
     align-self: center;
   }

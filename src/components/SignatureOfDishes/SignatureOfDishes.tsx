@@ -29,7 +29,7 @@ const SignatureDishes = () => {
     };
   }, []);
   return (
-    <GenericHomeSection color="#fafafa">
+    <GenericHomeSection className="margin-div" color="#fafafa">
       <GenericContainer>
         <div className="signature-main-div">
           <h2>{signatureHeadLine}</h2>

@@ -1,3 +1,4 @@
+import './GenericHomeSection.scss';
 type props = {
     children: string |JSX.Element | JSX.Element[],
     color: string,

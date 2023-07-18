@@ -11,7 +11,7 @@ import "./AboutUs.scss";
 
 const AboutUs = () => {
   return (
-    <GenericHomeSection color="#fafafa">
+    <GenericHomeSection className="margin-div" color="#fafafa">
       <GenericContainer>
           <div className="about-us-inner-div">
             <div className="epicure-icon-div">
