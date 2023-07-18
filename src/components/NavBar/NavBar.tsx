@@ -39,7 +39,7 @@ const NavBar = (props: any) => {
               imgClassName="icon"
               src={SearchIcon}
               alt="Search"
-              onClick={props.handleMenuClick}
+              onClick={props.handleSearchClick}
             ></Button>
 
             <Button

@@ -11,3 +11,9 @@
 .box-shadow {
   box-shadow: 2px 4px 10px 0px rgba(175, 175, 175, 0.25);
 }
+
+
+.fade-container {
+  position: relative;
+  z-index: 2; /* Apply a higher z-index value */
+}
