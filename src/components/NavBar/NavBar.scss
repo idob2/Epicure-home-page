@@ -1,34 +1,29 @@
+@import "../../assets/styles/mixin.scss";
 
-%shared-sizes {
-  width: 20px;
-  height: 20px;
+.fixed-nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 .main-navigation {
-  margin: 0 auto; 
-  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 46px;
-  padding: 0 20px;
-  background-color: white;
-  width: 100vw;
   
+
   .order-bag-div {
     display: flex;
     justify-content: end;
     flex: 1;
-    img{
-        width: 20px;
-        height: 20px;
-    }
   }
-  .about-logo-div{
+  .about-logo-div {
     display: flex;
     align-items: center;
-   
+
     .about-logo {
-      
       width: 32px;
       height: 32px;
     }
@@ -38,18 +33,9 @@
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 900px) {
-  .link-nav-bar{
-    display: none;
-  }
-  .epicure{
-    display: none;
-  }
-}
 
-
-@media screen and (min-width: 900px) {
-  .epicure{
+@include desktop-only {
+  .epicure {
     color: #000;
     font-family: Helvetica Neue;
     font-size: 27px;
@@ -58,21 +44,28 @@
     line-height: normal;
     letter-spacing: 1.35px;
   }
-  .link-nav-bar{
-    display:flex;
+  .link-nav-bar {
+    display: flex;
   }
 
-  .about-logo-div{
+  .about-logo-div {
     flex-grow: 1;
     justify-content: start;
     display: flex;
-    gap:10px;
+    gap: 10px;
   }
   .hambur-logo-div {
     display: none;
-  .hamburg-img {
-    display: none;
-
+    .hamburg-img {
+      display: none;
+    }
   }
+}
+@include mobile-only {
+  .link-nav-bar {
+    display: none;
+  }
+  .epicure {
+    display: none;
   }
 }

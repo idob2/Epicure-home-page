@@ -12,17 +12,17 @@
   position: absolute;
 }
 .menu-bar {
-    .exit-button {
-    padding: 10px 0px 0px 13px;
-    background-color: transparent;
-    border-color: transparent;
-    cursor: pointer;
-    .exit-image {
-      width: 20px;
-      height: 20px;
-      flex-shrink: 0;
-    }
-  }
+  //   .exit-button {
+  //   padding: 10px 0px 0px 13px;
+  //   background-color: transparent;
+  //   border-color: transparent;
+  //   cursor: pointer;
+  //   .exit-image {
+  //     width: 20px;
+  //     height: 20px;
+  //     flex-shrink: 0;
+  //   }
+  // }
   .menu-items {
     padding: 40px 12px 24px 20px;
     @extend %shared-divs;

@@ -1,27 +1,22 @@
+@import '../../assets/styles/mixin.scss';
 .chef-card-div {
   display: flex;
- 
-  // width: 360px;
-
   .chef-img {
-    width: 400px;
-    // flex-shrink: 0;
+    width: 100%;
   }
 }
-
-@media screen and (min-width: 900px) {
-  .chef-card-div {
-    flex-direction: row;//should be row 
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@include mobile-only{
   .chef-card-div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@include desktop-only{
+  .chef-card-div {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap:40px;
   }
 }

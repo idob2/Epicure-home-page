@@ -1,28 +1,21 @@
-.chef-week-resturants-div{
-    padding: 10px 25px;
-    margin: 0 auto; 
-}
-
+@import "../../assets/styles/mixin.scss";
 .all-chef-of-week-resturants-div {
+  display: flex;
+}
+
+@include mobile-only {
+  .chef-week-resturants-div {
+    max-width: 900px;
+  }
+}
+
+@include desktop-only {
+  .chef-week-resturants-div {
+    max-width: 500px;
+    justify-content: flex-start;
+  }
+  .chef-of-week-all-resturants-div {
     display: flex;
-}
-
-@media screen and (max-width: 900px) {
-    .chef-week-resturants-div{
-        max-width: 900px;
-
-    }
-}
-
-
-@media screen and (min-width: 900px) {
-    .chef-week-resturants-div{
-        max-width: 500px;
-        justify-content: flex-start;
-
-    }
-    .chef-of-week-all-resturants-div {
-        display: flex;
-        justify-content: flex-start;
-        }
+    justify-content: flex-start;
+  }
 }

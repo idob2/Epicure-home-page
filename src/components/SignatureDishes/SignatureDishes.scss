@@ -1,15 +1,11 @@
-.signature-dishes-div{
-  padding:10px 25px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.all-signature-dishes-div{
-    display: flex;
+@import "../../assets/styles/mixin.scss";
+
+.all-signature-dishes-div {
+  display: flex;
 }
 
-
-@media screen and (min-width: 900px) {
-  .all-signature-dishes-div{
+@include desktop-only {
+  .all-signature-dishes-div {
     justify-content: end;
   }
   .signature-dish-title-div {

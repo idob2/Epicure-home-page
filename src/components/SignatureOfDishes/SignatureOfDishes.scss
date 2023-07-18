@@ -1,37 +1,21 @@
+@import "../../assets/styles/mixin.scss";
 .signature-main-div {
   display: flex;
-  width: 100vw;
-  background-color: #fafafa;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 39px 0px;
+  gap: 32px;
   .signature-symboles {
     display: flex;
   }
 }
 
-
-@media screen and (max-width: 900px) {
-  .signature-headline {
-   
-    font-size: 18px;
-    letter-spacing: 1.25px;
+@include desktop-only {
+  .signature-main-div {
+    height: 265px;
   }
-  .signature-symboles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 584px;
-
-  }
-
-}
-
-@media screen and (min-width: 900px) {
   .signature-headline {
-    text-align: center;    
+    text-align: center;
     font-size: 30px;
     letter-spacing: 1.5px;
   }
@@ -42,5 +26,20 @@
     flex-direction: row;
     gap: 40px;
   }
+}
 
+@include mobile-only {
+  .signature-main-div {
+    height: 584px;
+  }
+  .signature-headline {
+    font-size: 18px;
+    letter-spacing: 1.25px;
+  }
+  .signature-symboles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }

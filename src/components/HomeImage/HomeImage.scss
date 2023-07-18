@@ -1,4 +1,5 @@
 @import "../SearchBar/SearchBar.scss";
+@import "../../assets/styles/mixin.scss";
 .image-div {
   width: 100vw;
   height: 273px;
@@ -11,7 +12,7 @@
     object-fit: cover;
   }
   .search-div {
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,22 +22,21 @@
     z-index: 1;
     position: absolute;
     flex-shrink: 0;
-    .inner-search-div{
+    .inner-search-div {
       max-width: 500px;
       .search-bar {
-          width: 100%;
-          height: 30px;
+        width: 100%;
+        height: 30px;
       }
     }
-    
   }
-
-  @media screen and (max-width: 900px) {
+  @include mobile-only {
     .search-div {
       max-width: 80%;
     }
   }
-  @media screen and (min-width: 900px) {
+
+  @include desktop-only {
     .search-div {
       max-width: 900px;
     }

@@ -1,13 +1,11 @@
-.generic-container{
-    padding:0 25px;
-    max-width: 900px;
-    margin: 0 auto;
+@import "../../assets/styles/mixin.scss";
+.generic-container {
+  padding: 0 25px;
+  max-width: 900px;
+  margin: 0 auto;
 }
-
-
-@media screen and (min-width: 900px) {
-   
-.generic-container{
-    padding: 0 ;
-} 
+@include desktop-only {
+  .generic-container {
+    padding: 0;
+  }
 }

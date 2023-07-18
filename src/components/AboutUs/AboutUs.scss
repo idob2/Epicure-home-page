@@ -1,52 +1,33 @@
-%shared-background {
-  background-color: transparent;
-  border: none;
-}
+@import "../../assets/styles/mixin.scss";
 
-.about-us-outer-div {
-  width: 100%;
-  //   height: 529px;
-  background: #fafafa;
-  .about-us-inner-div {
+.about-us-inner-div {
+  display: flex;
+  .epicure-icon-div {
     display: flex;
-    .epicure-icon-div {
+  }
+  display: flex;
+  .store-description-div {
+    display: flex;
+    .stores-div {
       display: flex;
+      gap: 16px;
+      .google-play-button {
+        padding: 0;
+      }
+      .apple-store-button {
+        padding: 0;
+      }
     }
-    padding: 20px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    .store-description-div {
+    .about-us-descreption-div {
       display: flex;
-      .stores-div {
-        display: flex;
-        gap: 16px;
-
-        .google-play-button {
-          padding: 0;
-          @extend %shared-background;
-          .google-play-image {
-            @extend %shared-background;
-          }
-        }
-        .apple-store-button {
-          padding: 0;
-          @extend %shared-background;
-          .apple-store-image {
-            @extend %shared-background;
-          }
-        }
-      }
-      .about-us-descreption-div {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        justify-content: baseline;
-      }
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: baseline;
     }
   }
 }
-@media screen and (max-width: 900px) {
+
+@include mobile-only {
   .stores-div {
     flex-direction: column;
     align-items: flex-start;
@@ -60,8 +41,7 @@
   }
 }
 
-
-@media screen and (min-width: 900px) {
+@include desktop-only {
   .stores-div {
     flex-direction: row-reverse;
   }
@@ -74,7 +54,6 @@
     flex-direction: column-reverse;
     align-items: flex-start;
     flex: 1;
-  
   }
   .epicure-icon-div {
     justify-content: end;

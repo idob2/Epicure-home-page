@@ -1,12 +1,8 @@
-.popular-resturants-div{
-  padding: 10px 25px;
-  max-width: 900px;
-  margin: 0 auto; 
-}
+@import '../../assets/styles/mixin.scss';
 .all-resturants-div {
     display: flex;
 }
-@media screen and (min-width: 900px) {
+@include desktop-only{
   .all-resturants-div{
     justify-content: end;
   }

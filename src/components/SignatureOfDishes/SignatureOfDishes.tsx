@@ -1,10 +1,13 @@
 import "./SignatureOfDishes.scss";
 import DishSymbol from "../DishSymbol/DishSymbol";
-import Symbols from "../../assets/symbols_icons/big_symbols/Symbols"
+import Symbols from "../../assets/symbols_icons/big_symbols/Symbols";
 import { useState, useEffect } from "react";
-const SignatureDishes = () => {
+import GenericContainer from "../GenericContainer/GenericContainer";
+import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 
-  const [signatureHeadLine, setsignatureHeadLine] = useState("Signature Dish Of:");
+const SignatureDishes = () => {
+  const [signatureHeadLine, setsignatureHeadLine] =
+    useState("Signature Dish Of:");
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 900) {
@@ -26,18 +29,22 @@ const SignatureDishes = () => {
     };
   }, []);
   return (
-    <div className="signature-main-div">
-      <h2 >{signatureHeadLine}</h2>
-      <div className="signature-symboles">
-        {Symbols.map((dishSymbol: {icon:string, name:string}) => (
-          <DishSymbol
-            key={dishSymbol.icon}
-            icon={dishSymbol.icon}
-            name={dishSymbol.name}
-          ></DishSymbol>
-        ))}
-      </div>
-    </div>
+    <GenericHomeSection color="#fafafa">
+      <GenericContainer>
+        <div className="signature-main-div">
+          <h2>{signatureHeadLine}</h2>
+          <div className="signature-symboles">
+            {Symbols.map((dishSymbol: { icon: string; name: string }) => (
+              <DishSymbol
+                key={dishSymbol.icon}
+                icon={dishSymbol.icon}
+                name={dishSymbol.name}
+              ></DishSymbol>
+            ))}
+          </div>
+        </div>
+      </GenericContainer>
+    </GenericHomeSection>
   );
 };
 

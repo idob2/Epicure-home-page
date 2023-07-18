@@ -3,27 +3,35 @@ import AllResturantsIcon from "../../assets/general_images/AllResturants.svg";
 import "./SignatureDishes.scss"
 import SignatureDishesSwiper from "../Swipers/SignatureDishesSwiper";
 import Button from "../Button/Button";
+import GenericContainer from "../GenericContainer/GenericContainer";
+import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 
 const SignatureDishes = () => {
   return (
-    <div className="signature-dishes-div">
-      <div className="signature-dish-title-div">
-        <h2 >Signature Dishes of:</h2>
-      </div>
-      <div>
-        <SignatureDishesSwiper dishes={Dishes} />
-      </div>
-      <div className="all-signature-dishes-div">
-        <a className="bold-link line-hight35" href="">All Restaurants</a>
-        <Button
+    <GenericHomeSection color="white">
+      <GenericContainer>
+        <div className="signature-dish-title-div">
+          <h2>Signature Dishes of:</h2>
+        </div>
+        <div>
+          <SignatureDishesSwiper dishes={Dishes} />
+        </div>
+        <div className="all-signature-dishes-div">
+          <a className="bold-link line-hight35" href="">
+            All Restaurants
+          </a>
+          <Button
             buttonClassName="transparant-background-button"
             imgClassName="icon"
             src={AllResturantsIcon}
             alt="AllResturantsIcon"
-            onClick={() => {console.log("button clicked")}}
+            onClick={() => {
+              console.log("button clicked");
+            }}
           ></Button>
-      </div>
-    </div>
+        </div>
+      </GenericContainer>
+    </GenericHomeSection>
   );
 };
 
