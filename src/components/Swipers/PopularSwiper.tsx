@@ -31,7 +31,7 @@ const PopularSwiper = (props: { resturants: { imgUrl: string; name: string; chef
 
   return (
     <Swiper
-      spaceBetween={15}
+      spaceBetween={24}
       slidesPerView={slidesPerView}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper: any) => console.log(swiper)}

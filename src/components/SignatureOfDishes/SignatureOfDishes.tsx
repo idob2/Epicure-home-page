@@ -30,7 +30,6 @@ const SignatureDishes = () => {
   }, []);
   return (
     <GenericHomeSection className="margin-div" color="#fafafa">
-      <GenericContainer>
         <div className="signature-main-div">
           <h2>{signatureHeadLine}</h2>
           <div className="signature-symboles">
@@ -43,7 +42,6 @@ const SignatureDishes = () => {
             ))}
           </div>
         </div>
-      </GenericContainer>
     </GenericHomeSection>
   );
 };

@@ -1,3 +1,4 @@
+import GenericContainer from "../GenericContainer/GenericContainer";
 import "./GenericHomeSection.scss";
 type props = {
   children: string | JSX.Element | JSX.Element[];
@@ -10,7 +11,7 @@ const GenericHomeSection = ({ children, color, className }: props) => {
 
   return (
     <div className={wrapperClassName} style={{ backgroundColor: color }}>
-      {children}
+      <GenericContainer>{children}</GenericContainer>
     </div>
   );
 };

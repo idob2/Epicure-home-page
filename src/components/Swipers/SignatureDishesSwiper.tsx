@@ -31,7 +31,7 @@ const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, de
 
   return (
     <Swiper
-      spaceBetween={15}
+      spaceBetween={24}
       slidesPerView={slidesPerView}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper: any) => console.log(swiper)}

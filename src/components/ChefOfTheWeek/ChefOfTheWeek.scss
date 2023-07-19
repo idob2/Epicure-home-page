@@ -3,10 +3,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
+
 @include desktop-only{
+  .chef-of-the-week-div {
+    align-items: center;
+  }
+  
   .chef-of-the-week-title-div {
     display: flex;
     align-items: center;

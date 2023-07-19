@@ -12,7 +12,6 @@ import "./AboutUs.scss";
 const AboutUs = () => {
   return (
     <GenericHomeSection className="margin-div" color="#fafafa">
-      <GenericContainer>
           <div className="about-us-inner-div">
             <div className="epicure-icon-div">
               <img src={EpicureLogo} alt="Epicure Logo" />
@@ -45,7 +44,6 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-      </GenericContainer>
     </GenericHomeSection>
   );
 };

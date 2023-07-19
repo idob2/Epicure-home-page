@@ -39,8 +39,6 @@ const ChefOfTheWeekRestaurants = (props: {name:string}) => {
 
 
   return (
-    <GenericHomeSection  color="white" className="small-margin-div">
-      <GenericContainer>
         <div className="chef-week-resturants-div">
           <div className="chef-of-week-title-div">
             <h2 className="spacing-1-25" style={{ textAlign: "left" }}>
@@ -66,8 +64,6 @@ const ChefOfTheWeekRestaurants = (props: {name:string}) => {
             ></Button>
           </div>
         </div>
-      </GenericContainer>
-    </GenericHomeSection>
   );
 };
 

@@ -38,13 +38,6 @@ const CompleteNavBar = () => {
           handleSearchClick={handleSearchClick}
           handleBagClick={handleBagClick}
         ></NavBar>
-
-        // <TempComponent 
-        // handleMenuClick={handleMenuClick}
-        // handleSearchClick={handleSearchClick}
-        // handleBagClick={handleBagClick}>
-          
-        // </TempComponent>
       }
       {isBagSelected && <Bag></Bag>}    
     </div>

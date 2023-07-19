@@ -2,6 +2,7 @@
 
 .about-us-inner-div {
   display: flex;
+  
   .epicure-icon-div {
     display: flex;
   }
@@ -12,10 +13,10 @@
       display: flex;
       gap: 16px;
       .google-play-button {
-        padding: 0;
+        padding: 0px;
       }
       .apple-store-button {
-        padding: 0;
+        padding: 0px;
       }
     }
     .about-us-descreption-div {
@@ -32,9 +33,14 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .about-us-descreption-div{
+    margin-top: 48px;
+  }
   .about-us-inner-div {
     flex-direction: column;
     gap: 20px;
+    padding-top: 24px;
+    padding-bottom: 48px;
     .store-description-div {
       flex-direction: column;
     }
@@ -45,15 +51,19 @@
   .stores-div {
     flex-direction: row-reverse;
   }
+  
   .about-us-inner-div {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .store-description-div {
     flex-direction: column-reverse;
     align-items: flex-start;
     flex: 1;
+    gap: 16px;
   }
   .epicure-icon-div {
     justify-content: end;

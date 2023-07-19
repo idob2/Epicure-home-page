@@ -6,18 +6,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 64px;
   .home-image {
     width: 100vw;
     height: 100%;
     object-fit: cover;
   }
   .search-div {
-    padding: 10px;
+    
+   
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
     background: rgba(255, 255, 255, 0.88);
     z-index: 1;
     position: absolute;
@@ -26,6 +28,8 @@
       max-width: 500px;
       .search-bar {
         width: 100%;
+        margin-top: 18px;
+
         height: 30px;
       }
     }
@@ -33,11 +37,13 @@
   @include mobile-only {
     .search-div {
       max-width: 80%;
+      padding: 16px 10px;
     }
   }
 
   @include desktop-only {
     .search-div {
+      padding: 37px 135px;
       max-width: 900px;
     }
   }

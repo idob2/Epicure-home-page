@@ -1,13 +1,13 @@
 import { useState } from "react";
 import BagIcon from "../../assets/nav_bar_images/Property 1=Bag.svg";
-import { JackInTheBox } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import "./Bag.scss";
 const Bag = () => {
   const [bagItems, insertBagItem] = useState([]);
 
   return (
-    <div className="fade-container">
-      <JackInTheBox>
+    <div className="fade-container-bag">
+      <Slide>
         <div className="shopping-bag-div">
           <div className="bag-container">
             <img className="bag-image" src={BagIcon} alt="Bag Icon" />
@@ -18,7 +18,7 @@ const Bag = () => {
             )}
           </div>
         </div>
-      </JackInTheBox>
+      </Slide>
     </div>
   );
 };

@@ -8,7 +8,6 @@ import Button from "../Button/Button";
 const PopularRestaurants = () => {
   return (
     <GenericHomeSection className="margin-div" color="white">
-      <GenericContainer>
         <div className="title-div">
           <h2 className="spacing-1-25">popular restaurant in epicure:</h2>
         </div>
@@ -29,7 +28,6 @@ const PopularRestaurants = () => {
             }}
           ></Button>
         </div>
-      </GenericContainer>
     </GenericHomeSection>
   );
 };

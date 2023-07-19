@@ -11,7 +11,6 @@ import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 const NavBar = (props: any) => {
   return (
     <GenericHomeSection color="white" className="fixed-nav-bar">
-      <GenericContainer>
         <nav className="main-navigation">
           <div className="hambur-logo-div">
             <Button
@@ -61,7 +60,6 @@ const NavBar = (props: any) => {
             ></Button>
           </div>
         </nav>
-      </GenericContainer>
     </GenericHomeSection>
   );
 };

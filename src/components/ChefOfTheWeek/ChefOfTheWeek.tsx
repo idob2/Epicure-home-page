@@ -7,7 +7,6 @@ import ChefOfTheWeekRestaurants from "../ChefOfTheWeekRestaurants/ChefOfTheWeekR
 const ChefOfTheWeek = () => {
   return (
     <GenericHomeSection className="margin-div" color="white">
-      <GenericContainer>
         <div className="chef-of-the-week-div">
           <div className="chef-of-the-week-title-div">
             <h2 className="chef-of-the-week-headline"> Chef of the week: </h2>
@@ -17,7 +16,6 @@ const ChefOfTheWeek = () => {
           </div>
         </div>
         <ChefOfTheWeekRestaurants name="Yossi"></ChefOfTheWeekRestaurants>
-      </GenericContainer>
     </GenericHomeSection>
   );
 };

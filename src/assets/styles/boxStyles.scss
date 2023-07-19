@@ -7,6 +7,18 @@
   .small-margin-div {
     margin-top: 40px;
   }
+  .margin-div{
+    margin-top:80px;
+  }
+}
+
+@include mobile-only{
+  .margin-div{
+    margin-top:48px;
+  }
+  .small-margin-div {
+    margin-top: 17px;
+  }
 }
 .box-shadow {
   box-shadow: 2px 4px 10px 0px rgba(175, 175, 175, 0.25);
@@ -14,6 +26,6 @@
 
 
 .fade-container {
-  position: relative;
+  position: fixed;
   z-index: 2; /* Apply a higher z-index value */
 }

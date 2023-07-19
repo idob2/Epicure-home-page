@@ -9,7 +9,6 @@ import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 const SignatureDishes = () => {
   return (
     <GenericHomeSection className="margin-div" color="white">
-      <GenericContainer>
         <div className="signature-dish-title-div">
           <h2>Signature Dishes of:</h2>
         </div>
@@ -30,7 +29,6 @@ const SignatureDishes = () => {
             }}
           ></Button>
         </div>
-      </GenericContainer>
     </GenericHomeSection>
   );
 };

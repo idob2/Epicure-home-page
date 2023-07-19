@@ -18,19 +18,21 @@ const DishCard = (props: {
       <div className="signature-dish-content-div">
         <span className="card-name">{props.name}</span>
         <div className="dish-card-content-div">
-        <span className="card-input">{props.description} </span>
-        <span className="signature-dish-type">{props.type} </span>
-        <div className="hr-cost-div">
-          <hr />
-          <span className="signature-dish-cost">{props.cost} </span>
-          <hr />
-          {/* <div className="hr-div">
-            <hr className="cost-hr" />
-          </div> */}
-          
+          {props.type && (
+            <img
+              className="signature-dish-type icon"
+              src={props.type}
+              alt="signature-dish-type"
+            />
+          )}
+          <span className="card-input">{props.description} </span>
+
+          <div className="hr-cost-div">
+            <hr />
+            <span className="signature-dish-cost">{props.cost} </span>
+            <hr />
+          </div>
         </div>
-        </div>
-        
       </div>
     </div>
   );
