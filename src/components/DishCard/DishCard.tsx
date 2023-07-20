@@ -6,6 +6,7 @@ const DishCard = (props: {
   type?: string;
   cost: string;
 }) => {
+  console.log(props.type);
   return (
     <div className="signature-dish-div">
       <div className="signature-image-div">
@@ -18,6 +19,7 @@ const DishCard = (props: {
       <div className="signature-dish-content-div">
         <span className="card-name">{props.name}</span>
         <div className="dish-card-content-div">
+          <div className="type-content-div" >
           {props.type && (
             <img
               className="signature-dish-type icon"
@@ -25,13 +27,18 @@ const DishCard = (props: {
               alt="signature-dish-type"
             />
           )}
+          <div className="card-input-div">
           <span className="card-input">{props.description} </span>
 
+          </div>
+          </div>
+        
           <div className="hr-cost-div">
             <hr />
             <span className="signature-dish-cost">{props.cost} </span>
             <hr />
           </div>
+          
         </div>
       </div>
     </div>

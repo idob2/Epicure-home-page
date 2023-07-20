@@ -5,8 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import DishCard from "../DishCard/DishCard";
 import { useState, useEffect } from "react";
+import Dishes from "../../assets/dishes";
 
-const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, description: string, cost: string }[]}) => {
+const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, description: string, cost: string, type?:string }[]}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(1.5);
   useEffect(() => {
     const handleResize = () => {
@@ -29,6 +30,7 @@ const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, de
     };
   }, []);
 
+  console.log(Dishes);
   return (
     <Swiper
       spaceBetween={24}
@@ -36,13 +38,14 @@ const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, de
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper: any) => console.log(swiper)}
     >
-      {props.dishes.map((resturant) => (
-        <SwiperSlide key={resturant.image}>
+      {props.dishes.map((dish) => (
+        <SwiperSlide key={dish.image}>
           <DishCard
-            image={resturant.image}
-            name={resturant.name}
-            description={resturant.description}
-            cost = { resturant.cost}
+            image={dish.image}
+            name={dish.name}
+            description={dish.description}
+            cost = { dish.cost}
+            type= {dish.type}
           ></DishCard>
         </SwiperSlide>
       ))}
