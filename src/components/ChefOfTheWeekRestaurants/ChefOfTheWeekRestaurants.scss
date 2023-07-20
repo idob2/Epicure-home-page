@@ -11,7 +11,9 @@
   }
   
 }
-
+.chef-name{
+  text-transform: none;
+}
 @include desktop-only {
   .chef-week-resturants-div {
     margin-top:40px;

@@ -30,7 +30,7 @@ const SignatureDishes = () => {
   return (
     <GenericHomeSection className="margin-div" color="#fafafa">
         <div className="signature-main-div">
-          <h2>{signatureHeadLine}</h2>
+          <h2>THE MEANING OF OUR ICONS:</h2>
           <div className="signature-symboles">
             {Symbols.map((dishSymbol: { icon: string; name: string }) => (
               <DishSymbol

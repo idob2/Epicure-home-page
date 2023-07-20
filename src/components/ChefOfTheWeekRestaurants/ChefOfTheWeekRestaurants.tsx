@@ -39,7 +39,7 @@ const ChefOfTheWeekRestaurants = (props: {name:string}) => {
   return (
         <div className="chef-week-resturants-div">
           <div className="chef-of-week-title-div">
-            <h2 className="spacing-1-25" style={{ textAlign: "left" }}>
+            <h2 className="chef-name spacing-1-25" style={{ textAlign: "left" }}>
               {chefName}
             </h2>
           </div>

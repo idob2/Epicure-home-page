@@ -13,9 +13,6 @@
     object-fit: cover;
   }
   .search-div {
-    
-   
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +23,9 @@
     flex-shrink: 0;
     .inner-search-div {
       max-width: 500px;
+      .image-div-title{
+        text-transform:none;
+      }
       .search-bar {
         width: 100%;
         margin-top: 18px;
