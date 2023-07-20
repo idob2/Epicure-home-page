@@ -5,7 +5,6 @@ import {
 import Button from "../Button/Button";
 import EpicureLogo from "../../assets/general_images/epicure_logo.svg";
 import Description from "../Description/Description";
-import GenericContainer from "../GenericContainer/GenericContainer";
 import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 import "./AboutUs.scss";
 

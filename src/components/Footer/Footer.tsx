@@ -1,6 +1,5 @@
 import Link from "../Link/Link";
 import "./Footer.scss";
-import GenericContainer from "../GenericContainer/GenericContainer";
 import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 
 const Footer = () => {

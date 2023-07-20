@@ -1,7 +1,6 @@
 import ChefCard from "../ChefCard/ChefCard";
 import Chefs from "../../assets/chefs_images/Chefs";
 import "./ChefOfTheWeek.scss";
-import GenericContainer from "../GenericContainer/GenericContainer";
 import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 import ChefOfTheWeekRestaurants from "../ChefOfTheWeekRestaurants/ChefOfTheWeekRestaurants";
 const ChefOfTheWeek = () => {

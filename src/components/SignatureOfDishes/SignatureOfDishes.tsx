@@ -2,7 +2,6 @@ import "./SignatureOfDishes.scss";
 import DishSymbol from "../DishSymbol/DishSymbol";
 import Symbols from "../../assets/symbols_icons/big_symbols/Symbols";
 import { useState, useEffect } from "react";
-import GenericContainer from "../GenericContainer/GenericContainer";
 import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 
 const SignatureDishes = () => {

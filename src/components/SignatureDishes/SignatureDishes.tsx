@@ -3,7 +3,6 @@ import AllResturantsIcon from "../../assets/general_images/AllResturants.svg";
 import "./SignatureDishes.scss"
 import SignatureDishesSwiper from "../Swipers/SignatureDishesSwiper";
 import Button from "../Button/Button";
-import GenericContainer from "../GenericContainer/GenericContainer";
 import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 
 const SignatureDishes = () => {

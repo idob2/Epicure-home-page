@@ -1,7 +1,7 @@
 import "./HomeImage.scss";
 import HomePageImage from "../../assets/general_images/hero-picture 1.svg";
 import SearchBar from "../SearchBar/SearchBar";
-const HomeImage = (props: any) => {
+const HomeImage = () => {
   return (
     <div className="image-div">
       <div className="search-div">

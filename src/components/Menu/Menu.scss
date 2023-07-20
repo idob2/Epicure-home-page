@@ -7,16 +7,26 @@
 .menu-bar {
   background-color: white;
   z-index: 2;
-  width:100vw;
+  width: 100vw;
   height: 367px;
   position: fixed;
 }
 .menu-bar {
-.exit-button{
-  margin-top: 10px;
-}
+  .menu-exit-button-div {
+    width: 100%;
+    padding: 11px 20px;
+    // padding-left: 15px;
+    
+    .exit-button {
+      border-left: 0px;
+      // margin-top: 10px;
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+  }
+
   .menu-items {
-    padding: 40px 12px 24px 15px;
+    padding: 40px 12px 24px 20px;
     @extend %shared-divs;
     flex-shrink: 0;
 
@@ -30,4 +40,3 @@
     }
   }
 }
-

@@ -1,5 +1,5 @@
 import SearchIcon from "../../assets/nav_bar_images/Group.svg";
-const SearchBar = (props: any) => {
+const SearchBar = () => {
   return (
     <div className="search-bar">
       <img className="search-img" src={SearchIcon} alt="Hamburg" />

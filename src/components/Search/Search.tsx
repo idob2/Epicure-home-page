@@ -3,9 +3,8 @@ import { Zoom } from "react-awesome-reveal";
 import "./Search.scss";
 import SearchBar from "../SearchBar/SearchBar";
 import "../../assets/styles/boxStyles.scss";
-import GenericContainer from "../GenericContainer/GenericContainer";
 
-const Search = (props: any) => {
+const Search = (props: {handleSearchClick: () => void}) => {
   return (
     <div className="fade-container">
       <Zoom>

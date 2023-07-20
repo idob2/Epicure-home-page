@@ -3,8 +3,6 @@ import PopularResturantsList from "../../assets/resturantImages/PopularResturans
 import PopularSwiper from "../Swipers/PopularSwiper";
 import AllResturantsIcon from "../../assets/general_images/AllResturants.svg";
 import Button from "../Button/Button";
-import GenericContainer from "../GenericContainer/GenericContainer";
-import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
 import { useState, useEffect } from "react";
 const ChefOfTheWeekRestaurants = (props: {name:string}) => {
 
