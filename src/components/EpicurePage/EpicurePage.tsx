@@ -6,8 +6,6 @@ import PopularRestaurants from "../PopularRestaurants/PopularRestaurants";
 import SignatureOfDishes from "../SignatureOfDishes/SignatureOfDishes";
 import ChefOfTheWeekRestaurants from "../ChefOfTheWeekRestaurants/ChefOfTheWeekRestaurants";
 import AboutUs from "../AboutUs/AboutUs";
-import Footer from "../Footer/Footer";
-import TempComponent from "../TempComponent/TempComponent";
 
 const EpicurePage = () => {
   return (
@@ -20,8 +18,6 @@ const EpicurePage = () => {
 
       <SignatureOfDishes></SignatureOfDishes>
       <ChefOfTheWeek></ChefOfTheWeek>
-      
-      {/* <ChefOfTheWeekRestaurants></ChefOfTheWeekRestaurants> */}
       <AboutUs></AboutUs>
       
     </div>

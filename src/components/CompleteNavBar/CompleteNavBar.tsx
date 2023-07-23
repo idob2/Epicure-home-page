@@ -1,12 +1,8 @@
-import React from "react";
 import { useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import Menu from "../Menu/Menu";
 import Bag from "../Bag/Bag";
 import Search from "../Search/Search";
-import HomeImage from "../HomeImage/HomeImage";
-import PopularResturants from "../PopularRestaurants/PopularRestaurants";
-import TempComponent from "../TempComponent/TempComponent";
 
 const CompleteNavBar = () => {
   const [isMenuSelected, setIsMenuSelected] = useState(false);

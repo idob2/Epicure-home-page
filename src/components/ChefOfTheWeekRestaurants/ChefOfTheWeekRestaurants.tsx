@@ -4,6 +4,7 @@ import PopularSwiper from "../Swipers/PopularSwiper";
 import AllResturantsIcon from "../../assets/general_images/AllResturants.svg";
 import Button from "../Button/Button";
 import { useState, useEffect } from "react";
+import ChefOfTheWeekRestaurantsSweeper from "../Swipers/ChefOfTheWeekRestaurantsSweeper";
 const ChefOfTheWeekRestaurants = (props: {name:string}) => {
 
   const [chefName, setChefName] = useState("chef of the week:");
@@ -44,7 +45,7 @@ const ChefOfTheWeekRestaurants = (props: {name:string}) => {
             </h2>
           </div>
           <div className="chef-of-week-all-resturants-div small-margin-div">
-            <PopularSwiper resturants={chefOfTheWeekRestaurants} />
+            <ChefOfTheWeekRestaurantsSweeper resturants={chefOfTheWeekRestaurants} />
           </div>
           <div className="all-chef-of-week-resturants-div">
             <a className="bold-link line-hight35" href="">

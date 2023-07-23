@@ -29,6 +29,7 @@
       flex-direction: column;
       justify-content: space-between; 
       flex-grow: 1; 
+      margin-top: 8px;
     }
 
     .hr-cost-div {
@@ -36,7 +37,7 @@
       flex-direction: row;
       width: 100%;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       .hr-div {
         width: 100%;
         .cost-hr {

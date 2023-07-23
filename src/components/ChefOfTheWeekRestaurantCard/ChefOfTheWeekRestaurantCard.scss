@@ -15,17 +15,30 @@
       object-fit: cover;
     }
   }
-  .popular-name-div {
+  .chef-of-week-restaurant-name-div{
     display: flex;
-    padding: 16px 16px 25px 16px;
+    padding: 16px 16px 16px 16px;
     flex-direction: column;
     align-self: stretch;
     justify-content: flex-start;
+    height: 100px;
     gap: 12px;
     background: #f9f4ea;
   }
 }
-
+@include mobile-only {
+    .chef-restaurant
+    {
+      font-size: 18px;
+    }
+  }
+  
+  @include desktop-only {
+    .chef-restaurant
+    {
+      font-size: 24px;
+    }
+  }
 @include mobile-only {
   .star-rating{
     display: none;
