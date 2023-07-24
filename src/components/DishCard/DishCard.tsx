@@ -35,7 +35,11 @@ const DishCard = (props: {
         
           <div className="hr-cost-div">
             <hr />
-            <span className="signature-dish-cost">{props.cost} </span>
+            <div className="cost-container">
+            <span>₪</span>
+            <span className="signature-dish-cost">{props.cost}</span>
+            </div>
+            
             <hr />
           </div>
           
