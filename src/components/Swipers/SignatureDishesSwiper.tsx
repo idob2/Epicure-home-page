@@ -5,27 +5,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import DishCard from "../DishCard/DishCard";
 import { useState, useEffect } from "react";
+import WindowResizeHelper from "../../utils/windowHelper";
 
 const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, description: string, cost: string, type:string }[]}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(1.5);
+
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 900) {
-        setSlidesPerView(3);
-      } else {
-        setSlidesPerView(1.5);
-      }
-    };
+    const windowResizeHelper = new WindowResizeHelper(900, 1.5, setSlidesPerView);
 
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Initial call to handleResize
-    handleResize();
-
-    // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("resize", handleResize);
+      windowResizeHelper.cleanup();
     };
   }, []);
 

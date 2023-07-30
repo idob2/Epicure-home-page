@@ -17,7 +17,7 @@ const PopularRestaurants = () => {
       const restaurantsWithChefData: { imgUrl: string; name: string; chef: string; rating: string; }[] = [];
 
       await Promise.all(
-        restaurantsList.map(async (restaurant: { _id: string; image: any; name: any; ranking: any; }) => {
+        restaurantsList.map(async (restaurant: { _id: string; image: string; name: string; ranking: string; }) => {
 
           const chef =  await getChefOfRestaurant(restaurant._id);
 
@@ -56,7 +56,7 @@ const PopularRestaurants = () => {
             src={AllResturantsIcon}
             alt="AllResturantsIcon"
             onClick={() => {
-              console.log("button clicked");
+              
             }}
           ></Button>
         </div>

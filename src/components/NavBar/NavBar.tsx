@@ -50,7 +50,6 @@ const NavBar = (props: {
             src={GeneralIcon}
             alt="Personal info"
             onClick={() => {
-              console.log("button clicked");
             }}
           ></Button>
 

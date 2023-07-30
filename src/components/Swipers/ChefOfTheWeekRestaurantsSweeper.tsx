@@ -5,27 +5,15 @@ import React, { useEffect, useState } from "react";
 // Import Swiper styles
 import "swiper/css";
 import ChefOfTheWeekResturantCard from "../ChefOfTheWeekRestaurantCard/ChefOfTheWeekRestaurantCard";
+import WindowResizeHelper from "../../utils/windowHelper";
 
 const ChefOfTheWeekRestaurantsSweeper = (props: { resturants: { image: string; name: string; chef: string}[]}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(1.5);
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 900) {
-        setSlidesPerView(3);
-      } else {
-        setSlidesPerView(1.5);
-      }
-    };
+    const windowResizeHelper = new WindowResizeHelper(900, 1.5, setSlidesPerView);
 
-    // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    // Initial call to handleResize
-    handleResize();
-
-    // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("resize", handleResize);
+      windowResizeHelper.cleanup();
     };
   }, []);
 

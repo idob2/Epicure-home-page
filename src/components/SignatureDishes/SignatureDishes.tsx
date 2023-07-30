@@ -22,21 +22,13 @@ const SignatureDishes = () => {
   useEffect(() => {
     const fetchData = async () => {
       const dishesList = await getAllDishes();
-      const dishes: {
-        image: string;
-        name: string;
-        description: string;
-        cost: string;
-        type: string;
-      }[] = [];
-
-      dishesList.forEach(
-        async (dish: {
+      const dishes = dishesList.map(
+        (dish: {
           image: string;
           name: string;
-          ingredients: string;
           price: string;
           tags: string;
+          ingredients: string;
         }) => {
           const restaurantObject = {
             image: dishesMap[dish.image],
@@ -46,7 +38,7 @@ const SignatureDishes = () => {
             type: dishesMap[dish.tags],
           };
 
-          dishes.push(restaurantObject);
+          return restaurantObject;
         }
       );
 
@@ -71,9 +63,7 @@ const SignatureDishes = () => {
           imgClassName="icon"
           src={AllResturantsIcon}
           alt="AllResturantsIcon"
-          onClick={() => {
-            console.log("button clicked");
-          }}
+          onClick={() => {}}
         ></Button>
       </div>
     </GenericHomeSection>

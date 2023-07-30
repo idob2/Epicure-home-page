@@ -17,30 +17,27 @@ const ChefOfTheWeekRestaurants = (props: { name: string; chefId: string }) => {
   >([]);
   useEffect(() => {
     const fetchData = async () => {
-      console.log(props.chefId);
       const allChefRestaurants = await getAllChefRestaurants(props.chefId);
       const restaurants: {
         name: string;
         image: string;
         chef: string;
         dishes: string[];
-      }[] = [];
-      allChefRestaurants.forEach(
-        async (restaurant: {
-          name: string;
-          image: string;
-          chef: string;
-          dishes: string[];
-        }) => {
-          const restaurantObject = {
-            name: restaurant.name,
-            image: restaurantImageMap[restaurant.image],
-            chef: restaurant.chef,
-            dishes: restaurant.dishes,
-          };
-          restaurants.push(restaurantObject);
-        }
-      );
+      }[] =  allChefRestaurants.map((restaurant: {
+        name: string;
+        image: string;
+        chef: string;
+        dishes: string[];
+      }) => {
+        const restaurantObject = {
+          name: restaurant.name,
+          image: restaurantImageMap[restaurant.image],
+          chef: restaurant.chef,
+          dishes: restaurant.dishes,
+        };
+        return restaurantObject;
+      });
+      
       setChefRestaurants(restaurants);
     };
     fetchData();

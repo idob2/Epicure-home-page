@@ -46,9 +46,7 @@ const TempComponent = (props: any) => {
               imgClassName="icon"
               src={GeneralIcon}
               alt="Personal info"
-              onClick={() => {
-                console.log("button clicked");
-              }}
+              onClick={() => {}}
             ></Button>
 
             <Button

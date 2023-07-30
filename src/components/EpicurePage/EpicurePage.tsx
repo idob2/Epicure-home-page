@@ -9,7 +9,7 @@ import AboutUs from "../AboutUs/AboutUs";
 const EpicurePage = () => {
   return (
     <div>
-      <HomeImage></HomeImage>
+      <HomeImage/>
 
       <PopularRestaurants></PopularRestaurants>
 

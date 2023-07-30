@@ -22,8 +22,7 @@ const AboutUs = () => {
                   imgClassName="google-play-image transparant-background-button"
                   src={GooglePlayButton}
                   alt="google play"
-                  onClick={() => {
-                    console.log("button clicked");
+                  onClick={() => {  
                   }}
                 ></Button>
                 <Button
@@ -32,7 +31,6 @@ const AboutUs = () => {
                   src={AppleStoreButton}
                   alt="apple store"
                   onClick={() => {
-                    console.log("button clicked");
                   }}
                 ></Button>
               </div>
