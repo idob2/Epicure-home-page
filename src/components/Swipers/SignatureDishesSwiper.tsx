@@ -5,9 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import DishCard from "../DishCard/DishCard";
 import { useState, useEffect } from "react";
-import Dishes from "../../assets/dishes";
 
-const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, description: string, cost: string, type?:string }[]}) => {
+const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, description: string, cost: string, type:string }[]}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(1.5);
   useEffect(() => {
     const handleResize = () => {
@@ -30,7 +29,6 @@ const SignatureDishesSwiper = (props:{ dishes: { image: string, name: string, de
     };
   }, []);
 
-  console.log(Dishes);
   return (
     <Swiper
       spaceBetween={24}

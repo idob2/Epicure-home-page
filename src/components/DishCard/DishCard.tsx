@@ -6,7 +6,6 @@ const DishCard = (props: {
   type?: string;
   cost: string;
 }) => {
-  console.log(props.type);
   return (
     <div className="signature-dish-div">
       <div className="signature-image-div">

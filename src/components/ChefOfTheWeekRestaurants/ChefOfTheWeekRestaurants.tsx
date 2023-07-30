@@ -1,14 +1,50 @@
 import "./ChefOfTheWeekRestaurants.scss";
-import PopularResturantsList from "../../assets/resturantImages/PopularResturans";
-import PopularSwiper from "../Swipers/PopularSwiper";
+import { getAllChefRestaurants } from "../../api/api";
 import AllResturantsIcon from "../../assets/general_images/AllResturants.svg";
 import Button from "../Button/Button";
 import { useState, useEffect } from "react";
 import ChefOfTheWeekRestaurantsSweeper from "../Swipers/ChefOfTheWeekRestaurantsSweeper";
-const ChefOfTheWeekRestaurants = (props: {name:string}) => {
-
+import { restaurantImageMap } from "../../assets/resturantImages/index";
+const ChefOfTheWeekRestaurants = (props: { name: string; chefId: string }) => {
   const [chefName, setChefName] = useState("chef of the week:");
+  const [chefRestaurants, setChefRestaurants] = useState<
+    {
+      name: string,
+      image: string,
+      chef: string,
+      dishes: string[],
+    }[]
+  >([]);
   useEffect(() => {
+    const fetchData = async () => {
+      console.log(props.chefId);
+      const allChefRestaurants = await getAllChefRestaurants(props.chefId);
+      const restaurants: {
+        name: string;
+        image: string;
+        chef: string;
+        dishes: string[];
+      }[] = [];
+      allChefRestaurants.forEach(
+        async (restaurant: {
+          name: string;
+          image: string;
+          chef: string;
+          dishes: string[];
+        }) => {
+          const restaurantObject = {
+            name: restaurant.name,
+            image: restaurantImageMap[restaurant.image],
+            chef: restaurant.chef,
+            dishes: restaurant.dishes,
+          };
+          restaurants.push(restaurantObject);
+        }
+      );
+      setChefRestaurants(restaurants);
+    };
+    fetchData();
+
     const handleResize = () => {
       if (window.innerWidth > 900) {
         setChefName(`${props.name}'s Restaurants`);
@@ -28,41 +64,36 @@ const ChefOfTheWeekRestaurants = (props: {name:string}) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
-  const chefOfTheWeekRestaurants = PopularResturantsList.map((restaurant) => ({
-    imgUrl: restaurant.imgUrl,
-    name: restaurant.name,
-    chef: "",
-    rating: ""
-  }));
 
 
   return (
-        <div className="chef-week-resturants-div">
-          <div className="chef-of-week-title-div">
-            <h2 className="chef-name spacing-1-25" style={{ textAlign: "left" }}>
-              {chefName}
-            </h2>
-          </div>
-          <div className="chef-of-week-all-resturants-div small-margin-div">
-            <ChefOfTheWeekRestaurantsSweeper resturants={chefOfTheWeekRestaurants} />
-          </div>
-          <div className="all-chef-of-week-resturants-div">
-            <a className="bold-link line-hight35" href="">
-              All restaurants
-            </a>
+    <div className="chef-week-resturants-div">
+      <div className="chef-of-week-title-div">
+        <h2 className="chef-name spacing-1-25" style={{ textAlign: "left" }}>
+          {chefName}
+        </h2>
+      </div>
+      <div className="chef-of-week-all-resturants-div small-margin-div">
+        <ChefOfTheWeekRestaurantsSweeper
+          resturants={chefRestaurants}
+        />
+      </div>
+      <div className="all-chef-of-week-resturants-div">
+        <a className="bold-link line-hight35" href="">
+          All restaurants
+        </a>
 
-            <Button
-              buttonClassName="transparant-background-button"
-              imgClassName="icon"
-              src={AllResturantsIcon}
-              alt="AllResturantsIcon"
-              onClick={() => {
-                console.log("clicked");
-              }}
-            ></Button>
-          </div>
-        </div>
+        <Button
+          buttonClassName="transparant-background-button"
+          imgClassName="icon"
+          src={AllResturantsIcon}
+          alt="AllResturantsIcon"
+          onClick={() => {
+            console.log("clicked");
+          }}
+        ></Button>
+      </div>
+    </div>
   );
 };
 

@@ -4,7 +4,6 @@ import HomeImage from "../HomeImage/HomeImage";
 import SignatureDishes from "../SignatureDishes/SignatureDishes";
 import PopularRestaurants from "../PopularRestaurants/PopularRestaurants";
 import SignatureOfDishes from "../SignatureOfDishes/SignatureOfDishes";
-import ChefOfTheWeekRestaurants from "../ChefOfTheWeekRestaurants/ChefOfTheWeekRestaurants";
 import AboutUs from "../AboutUs/AboutUs";
 
 const EpicurePage = () => {

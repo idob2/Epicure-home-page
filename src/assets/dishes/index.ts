@@ -1,11 +1,20 @@
-import {PadKiMaoCost, PadKiMaoCost2, PadKiMaoCost3, RedFarmCost, TaLaMaKoCost} from './dishesCosts';
-import {PadKiMaoDesc, PadKiMaoDesc2, PadKiMaoDesc3, RedFarmDesc, TaMaLaKoDesc} from './dishesDescription';
 import {PadKiMao, PadKiMao2, PadKiMao3, RedFarm, TaMaLaKo} from './dishesImages';
 import {SpicyIcon, VeganIcon, VegeterianIcon} from '../symbols_icons/small_symbols/index';
-const Dishes = [{image:PadKiMao, name: "Pad Ki Mao", description: PadKiMaoDesc, cost: PadKiMaoCost, type:SpicyIcon},
-{image:PadKiMao2, name: "Pad Ki Mao", description: PadKiMaoDesc2, cost: PadKiMaoCost2}, 
-{image:PadKiMao3, name: "Pad Ki Mao", description: PadKiMaoDesc3, cost: PadKiMaoCost3},
-{image:RedFarm, name: "Red Farm", description: RedFarmDesc, cost: RedFarmCost},
-{image:TaMaLaKo, name: "Ta La Ma Ko", description: TaMaLaKoDesc, cost: TaLaMaKoCost}];
 
-export default Dishes;
+interface dishesImages {
+    [key: string]: string;
+  }
+  
+  const dishesMap: dishesImages = {
+    "Pad Ki Mao": PadKiMao,
+    "Pad Ki Mao2": PadKiMao2,
+    "Pad Ki Mao3": PadKiMao3,
+    "Red Farm": RedFarm,
+    "Ta La Ma Ko": TaMaLaKo,
+    "spicy": SpicyIcon,
+    "vegan": VeganIcon,
+    "vegeterian": VegeterianIcon,
+    "none": ""
+  };
+  
+export {dishesMap};

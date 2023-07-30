@@ -5,4 +5,16 @@ import TwoStars from './two_star_rating.svg';
 import OneStar from './one_star_rating.svg';
 
 
-export {FiveStars, FourStars, ThreeStars, TwoStars, OneStar};
+interface RestaurantsRating {
+    [key: string]: string;
+  }
+  
+  const restaurantsRatingMap: RestaurantsRating = {
+    'five-stars': FiveStars,
+    'four-stars': FourStars,
+    'three-stars': ThreeStars,
+    'two-stars': TwoStars,
+    'one-star': OneStar,
+  };
+  
+  export {restaurantsRatingMap};

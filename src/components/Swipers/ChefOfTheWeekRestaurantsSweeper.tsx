@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import "swiper/css";
 import ChefOfTheWeekResturantCard from "../ChefOfTheWeekRestaurantCard/ChefOfTheWeekRestaurantCard";
 
-const ChefOfTheWeekRestaurantsSweeper = (props: { resturants: { imgUrl: string; name: string; chef?: string, rating?: string }[]}) => {
+const ChefOfTheWeekRestaurantsSweeper = (props: { resturants: { image: string; name: string; chef: string}[]}) => {
   const [slidesPerView, setSlidesPerView] = useState<number>(1.5);
   useEffect(() => {
     const handleResize = () => {
@@ -37,12 +37,11 @@ const ChefOfTheWeekRestaurantsSweeper = (props: { resturants: { imgUrl: string; 
       onSwiper={(swiper: any) => console.log(swiper)}
     >
       {props.resturants.map((resturant) => (
-        <SwiperSlide key={resturant.imgUrl}>
+        <SwiperSlide key={resturant.image}>
           <ChefOfTheWeekResturantCard
-            imgUrl={resturant.imgUrl}
+            imgUrl={resturant.image}
             name={resturant.name}
             chef={resturant.chef ? resturant.chef : ""}
-            rating={resturant.rating ? resturant.rating : ""}
           ></ChefOfTheWeekResturantCard>
         </SwiperSlide>
       ))}
