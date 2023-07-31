@@ -56,7 +56,7 @@ const ChefOfTheWeek = () => {
       </div>
       {chefOfTheWeek._id ?
       (<ChefOfTheWeekRestaurants
-          name="Yossi"
+          name={chefOfTheWeek.name}
           chefId={chefOfTheWeek._id}
         ></ChefOfTheWeekRestaurants>
       ):<div></div>}
