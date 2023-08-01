@@ -1,0 +1,60 @@
+@import "../../assets/styles/mixin.scss";
+.popular-card-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .popular-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    .resturant-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .chef-of-week-restaurant-name-div{
+    display: flex;
+    padding: 16px 16px 16px 16px;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: flex-start;
+    height: 100px;
+    gap: 12px;
+    background: #f9f4ea;
+  }
+}
+@include mobile-only {
+    .chef-restaurant
+    {
+      font-size: 18px;
+    }
+  }
+  
+  @include desktop-only {
+    .chef-restaurant
+    {
+      font-size: 24px;
+    }
+  }
+@include mobile-only {
+  .star-rating{
+    display: none;
+  }
+  .popular-name-div {
+    align-items: flex-start;
+  }
+}
+
+@include desktop-only {
+  .star-rating{
+    height: 40px;
+  }
+  .popular-name-div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

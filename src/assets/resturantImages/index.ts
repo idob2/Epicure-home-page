@@ -5,7 +5,23 @@ import KabKem from './Kab kem.svg';
 import Messa from './Messa.svg';
 import NitanThai from './NitanThai.svg';
 import YaPan from './YaPan.svg';
+import Onza from './onza.svg';
 
 
 
-export {Claro, Lumina, TigerLily, KabKem, Messa, NitanThai, YaPan};
+interface RestaurantImages {
+    [key: string]: string;
+  }
+  
+  const restaurantImageMap: RestaurantImages = {
+    claro: Claro,
+    lumina: Lumina,
+    'tiger-lily': TigerLily,
+    'kab-kem': KabKem,
+    messa: Messa,
+    'nitan-thai': NitanThai,
+    'ya-pan': YaPan,
+    'onza': Onza
+  };
+  
+  export {restaurantImageMap};

@@ -1,18 +1,23 @@
 import ExitFromMenu from "../../assets/general_images/General.svg";
-
-import "./Search.scss"
+import { Zoom } from "react-awesome-reveal";
+import "./Search.scss";
 import SearchBar from "../SearchBar/SearchBar";
-const Search = (props: any) => {
+import "../../assets/styles/boxStyles.scss";
+
+const Search = (props: {handleSearchClick: () => void}) => {
   return (
-    <div className="search-page">
-        <button className="exit-button" onClick={props.handleSearchClick}>
+    <div className="fade-container">
+      <Zoom>
+        <div className="search-page box-shadow">
+          <button className="exit-button" onClick={props.handleSearchClick}>
             <img className="exit-img" src={ExitFromMenu} alt="Exit" />
-        </button>
-        <div className="search-div">
-      <SearchBar></SearchBar>
+          </button>
+          <div className="search-div">
+            <SearchBar></SearchBar>
+          </div>
+        </div>
+      </Zoom>
     </div>
-    </div>
-   
   );
 };
 

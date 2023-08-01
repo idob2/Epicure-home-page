@@ -1,0 +1,63 @@
+@import "../../assets/styles/mixin.scss";
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  position: fixed;
+
+  .order-bag-div {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+  }
+  .about-logo-div {
+    display: flex;
+    align-items: center;
+
+    .about-logo {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .hambur-logo-div {
+    flex: 1;
+    justify-content: space-between;
+  }
+}
+
+@include desktop-only {
+  .epicure {
+    color: #000;
+    font-family: "Helvetica Neue"ß;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 1.35px;
+  }
+  .link-nav-bar {
+    display: flex;
+  }
+
+  .about-logo-div {
+    flex-grow: 1;
+    justify-content: start;
+    display: flex;
+    gap: 10px;
+  }
+  .hambur-logo-div {
+    display: none;
+    .hamburg-img {
+      display: none;
+    }
+  }
+}
+@include mobile-only {
+  .link-nav-bar {
+    display: none;
+  }
+  .epicure {
+    display: none;
+  }
+}

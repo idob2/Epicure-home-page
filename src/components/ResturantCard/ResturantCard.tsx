@@ -1,14 +1,15 @@
 import "./ResturantCard.scss"
-const ResturantCard = (props: {imgUrl: string, name: string, chef:string}) => {
-    // console.log(props.imgUrl);
+const ResturantCard = (props: {imgUrl: string, name: string, chef:string, rating?:string}) => {
     return(
         <div className="popular-card-div">
             <div className="popular-image-div">
             <img className="resturant-image" src={props.imgUrl} alt={props.name} />
             </div>
             <div className="popular-name-div">
-                <p className="resturant-name">{props.name}</p>
-                <p className="popular-chef-name">{props.chef} </p>
+                <span className="card-name">{props.name}</span>
+                <span className="card-input">{props.chef} </span>
+                {props.rating && <img className="star-rating" src={props.rating} alt="star-rating" />}
+                
             </div>
             
         </div>

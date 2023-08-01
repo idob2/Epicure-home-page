@@ -1,0 +1,123 @@
+@import './mixin.scss';
+h2 {
+
+  @include mobile-only{
+    font-size: 18px;
+  }
+  @include desktop-only{
+    text-align: center;
+    font-size: 30px;
+  }
+  color: #000;
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  font-weight: 200;
+  line-height: 35px; /* 116.667% */
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  margin: 0;
+  }
+  p {
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 28px; /* 155.556% */
+  }
+  .justify-text {
+    text-align: justify;
+  }
+  .spacing-2-14 {
+    letter-spacing: 2.14px;
+  }
+  
+  .spacing-1-25 {
+    letter-spacing: 1.25px;
+  }
+
+  @include mobile-only{
+    .card-name {
+      font-size: 18px;
+
+    }
+  }
+
+  @include desktop-only{
+    .card-name {
+      font-size: 35px;
+
+    }
+  }
+
+
+  @include mobile-only{
+    .card-input {
+      font-size: 16px;
+
+    }
+  }
+
+  @include desktop-only{
+    .card-input {
+      font-size: 20px;
+
+    }
+  }
+ 
+  .card-name {
+    color: #000;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: 2.67px;
+  }
+  .upper-case{
+    text-transform: uppercase;
+  }
+  .break-word{
+    word-wrap: break-word;
+
+  }
+  .card-input {
+    align-self: stretch;
+    color: #000;
+    font-family: "Helvetica Neue";
+    // font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.97px;
+  }
+
+  .align-text-center {
+    text-align: center;
+  }
+
+
+  .symbole-name {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: 1.97px;
+  }
+
+  .image-div-title {
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 32px;
+    letter-spacing: 1.97px;
+    margin-bottom: 0px;
+    flex-shrink: 0;
+
+  }

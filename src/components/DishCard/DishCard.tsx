@@ -16,13 +16,30 @@ const DishCard = (props: {
         />
       </div>
       <div className="signature-dish-content-div">
-        <p className="signature-dish-name">{props.name}</p>
-        <p className="signature-dish-description">{props.description} </p>
-        <p className="signature-dish-type">{props.type} </p>
-        <div className="hr-cost-div">
-          <p className="signature-dish-cost">{props.cost} </p>
-          <div className="hr-div">
-            <hr className="cost-hr" />
+        <span className="card-name">{props.name}</span>
+        <div className="dish-card-content-div">
+          <div className="type-content-div" >
+          {props.type && (
+            <img
+              className="signature-dish-type icon"
+              src={props.type}
+              alt="signature-dish-type"
+            />
+          )}
+          <div className="card-input-div">
+          <span className="card-input">{props.description} </span>
+
+          </div>
+          </div>
+        
+          <div className="hr-cost-div">
+            <hr />
+            <div className="cost-container">
+            <span>₪</span>
+            <span className="signature-dish-cost">{props.cost}</span>
+            </div>
+            
+            <hr />
           </div>
           
         </div>

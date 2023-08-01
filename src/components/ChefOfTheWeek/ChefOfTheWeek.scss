@@ -1,20 +1,19 @@
-.chef-of-the-week-div{
-// padding: 0px 40px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-.chef-of-the-week-title-div{
-width: 360px;
+@import '../../assets/styles/mixin.scss';
+.chef-of-the-week-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.chef-of-the-week-headline {
-    color: #000;
-    font-family: Helvetica Neue;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 35px;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
+
+
+@include desktop-only{
+  .chef-of-the-week-div {
+    align-items: center;
+  }
+  
+  .chef-of-the-week-title-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

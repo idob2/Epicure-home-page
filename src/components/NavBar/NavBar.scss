@@ -1,39 +1,29 @@
-%shared-button {
-  background-color: transparent;
-  border-color: transparent;
-  cursor: pointer;
-}
-%shared-sizes {
-  width: 20px;
-  height: 20px;
+@import "../../assets/styles/mixin.scss";
+
+.fixed-nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
 }
 .main-navigation {
-  max-width: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 46px;
-  padding: 0 20px;
-  background-color: white;
-  width: 100vw;
-  button {
-    @extend %shared-button;
-  }
+  height: 64px;
+  
+
   .order-bag-div {
     display: flex;
     justify-content: end;
     flex: 1;
-    img{
-        width: 20px;
-        height: 20px;
-    }
   }
-  .about-logo-div{
+  .about-logo-div {
     display: flex;
     align-items: center;
-   
+
     .about-logo {
-      
       width: 32px;
       height: 32px;
     }
@@ -41,41 +31,41 @@
   .hambur-logo-div {
     flex: 1;
     justify-content: space-between;
-    .hamburg-button {
-      .hamburg-img {
-        width: 24px;
-        height: 24px;
-        flex-shrink: 0;
-      }
-      
-    }
-  }
-}
-@media screen and (max-width: 700px) {
-  .restaurants-nav-bar{
-    display: none;
-  }
-  .chefs-nav-bar{
-    display: none;
   }
 }
 
-@media screen and (min-width: 700px) {
-  .restaurants-nav-bar{
-    display:flex;
+@include desktop-only {
+  .epicure {
+    color: #000;
+    font-family: "Helvetica Neue";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 1.35px;
   }
-  .chefs-nav-bar{
+  .link-nav-bar {
     display: flex;
   }
-  .about-logo-div{
+
+  .about-logo-div {
     flex-grow: 1;
     justify-content: start;
+    display: flex;
+    gap: 10px;
   }
   .hambur-logo-div {
     display: none;
-  .hamburg-img {
-    display: none;
-
+    .hamburg-img {
+      display: none;
+    }
   }
+}
+@include mobile-only {
+  .link-nav-bar {
+    display: none;
+  }
+  .epicure {
+    display: none;
   }
 }

@@ -1,0 +1,13 @@
+@import '../../assets/styles/mixin.scss';
+.all-resturants-div {
+    display: flex;
+}
+@include desktop-only{
+  .all-resturants-div{
+    justify-content: end;
+  }
+  .title-div {
+    display: flex;
+    justify-content: center;
+  }
+}

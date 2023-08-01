@@ -1,23 +1,22 @@
+@import '../../assets/styles/mixin.scss';
 .chef-card-div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   .chef-img {
-    width: 360px;
-    height: 338px;
-    flex-shrink: 0;
-  }
-  .chef-description {
-    width: 360px;
-    color: #000;
-    text-align: justify;
-    font-family: Helvetica Neue;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: 28px;
-    letter-spacing: 1.25px;
+    width: 100%;
   }
 }
-
+@include mobile-only{
+  .chef-card-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@include desktop-only{
+  .chef-card-div {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap:40px;
+  }
+}

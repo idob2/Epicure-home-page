@@ -1,0 +1,11 @@
+@import "../../assets/styles/mixin.scss";
+.generic-container {
+  padding: 0 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@include desktop-only {
+  .generic-container {
+    padding: 0;
+  }
+}

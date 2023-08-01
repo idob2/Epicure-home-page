@@ -1,28 +1,72 @@
-import Dishes from "../../assets/dishes/index";
 import AllResturantsIcon from "../../assets/general_images/AllResturants.svg";
-import "./SignatureDishes.scss"
+import "./SignatureDishes.scss";
 import SignatureDishesSwiper from "../Swipers/SignatureDishesSwiper";
+import Button from "../Button/Button";
+import GenericHomeSection from "../GenericHomeSection/GenericHomeSection";
+import { useState, useEffect } from "react";
+import { getAllDishes } from "../../api/api";
+
+import { dishesMap } from "../../assets/dishes/index";
 
 const SignatureDishes = () => {
+  const [dishes, setDishes] = useState<
+    {
+      image: string;
+      name: string;
+      description: string;
+      cost: string;
+      type: string;
+    }[]
+  >([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const dishesList = await getAllDishes();
+      const dishes = dishesList.map(
+        (dish: {
+          image: string;
+          name: string;
+          price: string;
+          tags: string;
+          ingredients: string;
+        }) => {
+          const restaurantObject = {
+            image: dishesMap[dish.image],
+            name: dish.name,
+            description: dish.ingredients,
+            cost: dish.price,
+            type: dishesMap[dish.tags],
+          };
+
+          return restaurantObject;
+        }
+      );
+
+      setDishes(dishes);
+    };
+    fetchData();
+  }, []);
   return (
-    <div className="signature-dishes-div">
+    <GenericHomeSection className="margin-div" color="white">
       <div className="signature-dish-title-div">
-        <p className="signature-dish-title">Signature Dishes of:</p>
+        <h2>Signature Dishes of:</h2>
       </div>
-      <div>
-        <SignatureDishesSwiper dishes={Dishes} />
+      <div className="small-margin-div">
+        <SignatureDishesSwiper dishes={dishes} />
       </div>
-      <div className="all-signature-dishes-div">
-        <a href="">All Dishes</a>
-        <button className="all-dishes-button">
-          <img
-            className="resturants-icon"
-            src={AllResturantsIcon}
-            alt="AllResturantsIcon"
-          />
-        </button>
+      <div className="all-signature-dishes-div small-margin-div">
+        <a className="bold-link line-hight35" href="">
+          All Restaurants
+        </a>
+        <Button
+          buttonClassName="transparant-background-button"
+          imgClassName="icon"
+          src={AllResturantsIcon}
+          alt="AllResturantsIcon"
+          onClick={() => {}}
+        ></Button>
       </div>
-    </div>
+    </GenericHomeSection>
   );
 };
 

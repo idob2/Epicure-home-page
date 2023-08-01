@@ -1,6 +1,5 @@
+@import "../../assets/styles/mixin.scss";
 .signature-dish-div {
-  margin-left: 20px;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,51 +16,97 @@
       object-fit: cover;
     }
   }
+
   .signature-dish-content-div {
     display: flex;
-    padding: 8px 16px 16px 16px;
+    padding: 16px 20px 16px 16px;
     flex-direction: column;
-    align-items: flex-start;
     align-self: stretch;
     background: #f9f4ea;
 
-    .signature-dish-name {
-      color: #000;
-      text-align: center;
-      font-family: Helvetica Neue;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 26px; /* 144.444% */
-      letter-spacing: 2.67px;
-      margin-bottom: 0px;
+    .dish-card-content-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      flex-grow: 1; 
+      margin-top: 8px;
     }
 
-    .signature-dish-description {
-      align-self: stretch;
-      color: #000;
-      font-family: Helvetica Neue;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 200;
-      line-height: 20px; /* 125% */
-      letter-spacing: 1.97px;
-    }
-
-    .hr-cost-div{
-        display: flex;
-        flex-direction: row;
+    .hr-cost-div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+      gap: 8px;
+      .hr-div {
         width: 100%;
-        align-items: center;
-        .hr-div{
-          width: 100%;
-          padding: 8px;
-          .cost-hr{
-            height: 0.5px;
-            background: #979797;
+        .cost-hr {
+          height: 0.5px;
         }
-        }
-        
+      }
+      .cost-container{
+        display: flex;
+        gap: 2px;
+      }
     }
+  }
+}
+@include mobile-only {
+  .dish-card-content-div{
+    gap: 16px;
+  }
+  .card-input-div{
+    height: 90px;
+  }
+  .type-content-div{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  hr {
+    display: none;
+  }
+  .signature-dish-content-div {
+    align-items: flex-start;
+    height: 240px;
+  }
+  .signature-dish-type {
+    width: 30px;
+    height: 24px;
+  }
+}
+
+@include desktop-only {
+  .signature-dish-content-div {
+    align-items: center;
+    height: 250px;
+  }
+  .card-input {
+    text-align: center;
+  }
+  .card-input-div{
+    display: flex;
+    justify-content: center;
+  }
+  .signature-dish-name {
+    align-self: center;
+  }
+  hr {
+    width: 100%;
+    color: #979797;
+    height: 0.5px;
+  }
+  .signature-dish-type {
+    width: 40px;
+    height: 31px;
+  }
+  .type-content-div{
+    margin-top: 8px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
   }
 }

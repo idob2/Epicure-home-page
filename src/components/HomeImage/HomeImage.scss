@@ -1,49 +1,50 @@
 @import "../SearchBar/SearchBar.scss";
+@import "../../assets/styles/mixin.scss";
 .image-div {
   width: 100vw;
   height: 273px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 64px;
   .home-image {
     width: 100vw;
     height: 100%;
     object-fit: cover;
   }
-
   .search-div {
-    padding:20px;
     display: flex;
-    // width: 335px;
-    height: 144px;
-    max-width: 80%;
-    // padding: 10px 26px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
     background: rgba(255, 255, 255, 0.88);
     z-index: 1;
     position: absolute;
-    // margin-top: 50px;
-    // margin-bottom: 20px;
     flex-shrink: 0;
-    p {
-      color: #000;
-      font-family: Helvetica Neue;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 200;
-      line-height: 32px;
-      letter-spacing: 1.97px;
-      margin-bottom: 0px;
-      flex-shrink: 0;
-    }
-    .search-bar {
-        padding: 3px 9px;
-        width: 95%;
+    .inner-search-div {
+      max-width: 500px;
+      .image-div-title{
+        text-transform:none;
+      }
+      .search-bar {
+        width: 100%;
+        margin-top: 18px;
+
         height: 30px;
-        margin-bottom: 1vh;
+      }
+    }
+  }
+  @include mobile-only {
+    .search-div {
+      max-width: 80%;
+      padding: 16px 10px;
+    }
+  }
+
+  @include desktop-only {
+    .search-div {
+      padding: 37px 135px;
+      max-width: 900px;
     }
   }
 }

@@ -1,0 +1,30 @@
+@import "../../assets/styles/mixin.scss";
+.all-chef-of-week-resturants-div {
+  margin-top: 13px;
+  display: flex;
+}
+
+@include mobile-only {
+  .chef-week-resturants-div {
+    margin-top:32px;
+    max-width: 900px;
+  }
+  
+}
+.chef-name{
+  text-transform: none;
+}
+@include desktop-only {
+  .chef-week-resturants-div {
+    margin-top:40px;
+    max-width: 500px;
+    justify-content: flex-start;
+  }
+  .chef-of-week-all-resturants-div {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .all-chef-of-week-resturants-div{
+    display: none;
+  }
+}
